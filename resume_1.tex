@@ -1,0 +1,192 @@
+%-------------------------
+% Based off of: https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeCourseItem}[4]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge \scshape James Young} \\ \vspace{2pt}
+    \small  \faPhone\ {+852 95731718} $|$ 
+    \href{mailto:jyyoungaa@connect.ust.hk}{\faEnvelope { jyyoungaa@connect.ust.hk}} $|$ 
+    \href{https://github.com/jamesyoung-15} {\faGithub\ {jamesyoung-15}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The Hong Kong University of Science and Technology}{Hong Kong}
+      {BEng in Electronic Engineering}{Sept. 2020 -- Present}
+  \resumeSubHeadingListEnd
+
+\section{Relevant Coursework}
+\vspace{-12pt}
+    \begin{multicols}{2}
+        \begin{itemize}[itemsep=-2pt, parsep=5pt]
+        \small
+            \item Intro. to Computer Science
+            \item Programming with C++
+            \item Signals and Systems
+            \item Electro-Robot Design
+        \end{itemize}
+    \end{multicols}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/jamesyoung-15/cpp_practice/tree/main/Student_Management}{\underline {Student Management System}}} $|$ \emph{C++}}{}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Created a student record management system written in C++ that can insert, print, search, and delete student record.}}
+            \resumeItem{\normalsize{Done using linked list to manage student data.}}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{\href{https://github.com/jamesyoung-15/tic_tac_toe}{\underline {Tic Tac Toe Game}}} $|$ \emph{C}}{}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Simple Tic Tac Toe game written in C that allows user to play against computer. Uses basic concepts such as functions and arrays to create the game.}}
+      \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: C++, C, Python} \\
+     \textbf{Tools/Software}{: Git, Linux} \\
+     \textbf{Languages}{: English (Native), Mandarin (Conversational)} \\
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Student Helper (Part Time)}{June 2021 -- July 2021}
+      {HKUST}{}
+      \resumeItemListStart 
+        \resumeItem{\normalsize{Helped school event by sending out invitations to primary, secondary, and tertiary schools in HK. Worked in small team to compile mailing list of all the schools in Excel then sent invitations using Outlook.}}
+        \resumeItem{\normalsize{Helped update and check course materials for class on Canvas}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%------Extra Curricular-------
+\section{Extracurricular Activities}
+    \begin{itemize}[itemsep=-2pt, parsep=5pt] 
+        \item  {HKUST Football Team \hfill Jan. 2021 - Present}
+        \item {Project C - Connect x Community (Volunteer Program) \hfill Oct. 2020 - Feb. 2021}
+    \end{itemize}
+
+
+
+\end{document}
