@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1665010784 "/home/jamesyoung/Documents/Personal_Projects/Resume/resume_1.tex" "resume_1.pdf" "resume_1" 1665010784
-  "/home/jamesyoung/Documents/Personal_Projects/Resume/resume_1.tex" 1665010726 5948 1c5ccb1426269121f30ed8008596170f ""
+["pdflatex"] 1665014299 "/home/jamesyoung/Documents/Personal_Projects/Resume/resume_1.tex" "resume_1.pdf" "resume_1" 1665014299
+  "/home/jamesyoung/Documents/Personal_Projects/Resume/resume_1.tex" 1665014298 6426 a6f3e3668e17655612d4925202e97243 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1650183167 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1650179560 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1650179560 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
@@ -108,9 +108,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1653594870 4278762 af3ac1370db81a450c1118eabf1fe718 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1653594853 2927660 6a12492fab4e2d675bcdc5e4eb8e8ffb ""
-  "resume_1.aux" 1665010784 1431 ed4d03744edc6ac733357558583c74ae "pdflatex"
-  "resume_1.out" 1665010784 682 85c7ce1b1dccc5c632a848b98cb45e71 "pdflatex"
-  "resume_1.tex" 1665010726 5948 1c5ccb1426269121f30ed8008596170f ""
+  "resume_1.aux" 1665014299 1440 20c8a43334c6fc1deeb0b571d232356f "pdflatex"
+  "resume_1.out" 1665014299 730 654b014b5f763be78d35feab788960d9 "pdflatex"
+  "resume_1.tex" 1665014298 6426 a6f3e3668e17655612d4925202e97243 ""
   (generated)
   "resume_1.aux"
   "resume_1.log"
