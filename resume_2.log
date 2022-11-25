@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.13)  16 NOV 2022 21:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.13)  24 NOV 2022 14:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -604,12 +604,12 @@ Overfull \hbox (0.55968pt too wide) in paragraph at lines 188--190
  []
 
 
-Overfull \hbox (0.55968pt too wide) in paragraph at lines 203--205
+Overfull \hbox (0.55968pt too wide) in paragraph at lines 204--206
 []  
  []
 
 
-Overfull \hbox (0.55968pt too wide) in paragraph at lines 210--212
+Overfull \hbox (0.55968pt too wide) in paragraph at lines 212--214
 []  
  []
 
@@ -625,13 +625,13 @@ Package rerunfilecheck Info: File `resume_2.out' has not changed.
 Here is how much of TeX's memory you used:
  25485 strings out of 478238
  487845 string characters out of 5850455
- 758749 words of memory out of 5000000
+ 759749 words of memory out of 5000000
  43322 multiletter control sequences out of 15000+600000
  476094 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,9n,89p,464b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on resume_2.pdf (1 page, 115149 bytes).
+Output written on resume_2.pdf (1 page, 115934 bytes).
 PDF statistics:
  94 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream
