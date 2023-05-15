@@ -1,0 +1,254 @@
+%-------------------------
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape James Young} \\ \vspace{2pt}
+   % Hong Kong \\ \vspace{1pt}
+    \small \href{tel:+85295731718}{ \raisebox{-0.1\height}\faPhone\ \underline{+852 95731718} ~} \href{mailto:jyyoungaa@connect.ust.hk}{\raisebox{-0.2\height}\faEnvelope\  \underline{jyyoungaa@connect.ust.hk}} ~ 
+    \href{https://linkedin.com/in/JamesYYoung}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{linkedin.com/in/jamesyyoung}}  ~
+    \href{https://github.com/jamesyoung-15}{\raisebox{-0.2\height}\faGithub\ \underline{jamesyoung-15}} ~
+\end{center}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The Hong Kong University of Science and Technology}{2020 -- Present}
+      {}{}
+        \resumeItemListStart
+            \resumeItem{\normalsize{BEng Electronic Engineering}}
+        \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{RELEVANT COURSEWORK}
+    %\resumeSubHeadingListStart
+    \begin{multicols}{2}
+        \begin{itemize}[itemsep=-2pt, parsep=5pt]
+        \small
+            \item Intro. to Computer Science
+            \item Programming with C++
+            \item Computer Communication Networks
+            \item Electronic Circuits
+            \item Electro-Robot Design
+            \item Introduction to Computer Organization and Design
+        \end{itemize}
+    \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+\vspace{5pt}
+
+
+%-----------PROJECTS-----------
+\section{PERSONAL PROJECTS}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\href{https://github.com/jamesyoung-15/http-server}{\textbf{\large{\underline{HTTP 1.1 Server}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{C}}}{}
+        \resumeItemListStart
+        \vspace{3pt}
+          \resumeItem{\normalsize{Created a simple HTTP 1.1 web server in C that is able to serve static web pages and images to a client's web browser.}}
+          \resumeItem{\normalsize{Uses concepts of socket programming to connect client and server and HTTP protocol to serve files.}}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+      {\href{https://github.com/jamesyoung-15/esp32-dht11-server}{\textbf{\large{\underline{ESP32 Temperature and Humidity Monitor}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{C}}}{}
+      \resumeItemListStart
+      \vspace{3pt}
+        \resumeItem{\normalsize{Created an IoT temperature and humidity sensor using an ESP32 and DHT11 sensor and programmed in C with ESP-IDF framework.}}
+        \resumeItem{\normalsize{Program reads the sensor data from GPIO, converts it to temperature and humidity, then sends the data over a HTTP server to be able to view the data on a webpage.}}
+      \resumeItemListEnd
+
+      \resumeProjectHeading
+      {\href{https://github.com/jamesyoung-15/cpp_practice/tree/main/Student_Management}{\textbf{\large{\underline{Student Management System}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{C++}}}{}
+      \resumeItemListStart
+      \vspace{3pt}
+        \resumeItem{\normalsize{Created a student record management system that can insert, print, search, and delete student record.}}
+        \resumeItem{\normalsize{Done using linked list approach to manage student data.}}
+      \resumeItemListEnd 
+          
+          \resumeSubHeadingListEnd
+\vspace{3pt}
+
+%
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Programming Languages:}}{ \normalsize{C, C++, Python}} \\
+     \vspace{1pt}
+     \textbf{\normalsize{Tools/Software:}}{\normalsize{ Linux, Git, Bash}} \\
+     \vspace{1pt}
+     \textbf{\normalsize{Spoken Languages:}}{\normalsize{ English (Native), Mandarin (Conversational)}} \\
+    }}
+ \end{itemize}
+\vspace{1pt}
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \vspace{3pt}
+    \resumeSubheading
+      {HKUST Student Helper}{June 2021 -- July 2021} 
+      {}{}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Helped school event by sending out invitations to primary, secondary, and tertiary schools in HK. Worked in a small team to compile mailing list of all the schools in Excel then sent invitations using Outlook.}}
+        \resumeItem{\normalsize{Helped update and check course materials for class on Canvas}}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{1pt}
+
+%------RELEVANT COURSEWORK-------
+\section{Extracurricular Activities}
+    \begin{itemize}[itemsep=-2pt, parsep=5pt] 
+        \item \textbf {HKUST Football Team \hfill January 2021 - Present}
+        \item \textbf {Project C - Connect x Community (Volunteer Program) \hfill October 2020 - February 2021}
+    \end{itemize}
+
+
+
+
+\end{document}

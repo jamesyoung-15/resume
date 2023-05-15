@@ -94,7 +94,7 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.05in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
@@ -128,61 +128,50 @@
     \begin{multicols}{2}
         \begin{itemize}[itemsep=-1pt, parsep=3pt]
         \small
-            \item Intro. to Computer Science
-            \item Programming with C++
             \item Object-Oriented Programming and Data Structures
+            \item Programming with C++
             \item Intro. to Computer Organization and Design
+            \item Electronic Circuits
             \item Electro-Robot Design
-            \item Introduction to Embedded Systems
             \item Computer Communication Networks
         \end{itemize}
     \end{multicols}
 
 
-%-----------EXPERIENCE-----------
-    \section{Work Experience}
-    \resumeSubHeadingListStart
-  
-      \resumeSubheading
-        {\href{https://github.com/jamesyoung-15/Internship-GraphiteVentureLimited}{{IoT Intern $|$ Graphite Venture Limited} \faExternalLink*}}{December 2022 -- May 2023}
-        {C++, ESP32, Arduino}{(Full and Part Time)}
-        \vspace{1pt}
-        \resumeItemListStart 
-          \resumeItem{\normalsize{Developed Arduino libraries for reading water sensor data with ESP32 and sending sensor data to AWS through MQTT with a SIM7600G module.}}
-          \resumeItem{\normalsize{Created an Arduino library for communicating to multiple ESP32 with ESP-Now protocol.}}
-        \resumeItemListEnd
-  
-    \resumeSubHeadingListEnd
-
 %-----------Personal PROJECTS-----------
-\section{Projects}
+\section{Personal Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-      {\textbf{\href{https://github.com/jamesyoung-15/Mini-Robot-Cleaner}{ {Mini Robot Cleaner} \faExternalLink*}} $|$ \emph{C, STM32, Python}}{}
-      \resumeItemListStart
-        \resumeItem{\normalsize{Created a robot car with a STM32 board that can be wirelessly controlled through UDP transmissions and also has an automatic free roam mode}} 
-        \resumeItem{\normalsize{Integrated the bubble rebound algorithm for avoiding obstacles in free roam mode using 3 ultrasonic sensors}}
-        \resumeItem{\normalsize{Used Python and PyQT5 to create a GUI for controlling the robot wirelessly}}
-      \resumeItemListEnd
-      \resumeProjectHeading
-      {\textbf{\href{https://github.com/jamesyoung-15/Portfolio-Analysis}{ {}}} $|$ \emph{Python}}{}
-      \resumeItemListStart
-        \resumeItem{\normalsize{}}
-        \resumeItem{\normalsize{}}
-      \resumeItemListEnd
-      \resumeProjectHeading
-        {\textbf{\href{https://github.com/jamesyoung-15/http-server}{ {HTTP 1.1 Web Server} \faExternalLink*}} $|$ \emph{C}}{}
+      {\textbf{\href{https://github.com/jamesyoung-15/http-server}{\underline {HTTP 1.1 Web Server}}} $|$ \emph{C}}{}
       \resumeItemListStart
         \resumeItem{\normalsize{Created a simple HTTP 1.1 web server in C that is able to serve static web pages and images to a client's web browser.}} 
         \resumeItem{\normalsize{Uses concepts of socket programming to connect client and server and HTTP protocol to serve files.}}
       \resumeItemListEnd
+      \resumeProjectHeading
+      {\textbf{\href{https://github.com/jamesyoung-15/esp32-dht11-serve}{\underline {ESP32 Temperature and Humidity Monitor}}} $|$ \emph{C}}{}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Created an IoT temperature and humidity sensor using an ESP32 and DHT11 sensor and programmed in C with ESP-IDF framework.}}
+        \resumeItem{\normalsize{Program reads the sensor data from GPIO, converts it to temperature and humidity, then sends the data over a HTTP server to be able to view the data on a webpage.}}
+      \resumeItemListEnd
+      % \resumeProjectHeading
+      %     {\textbf{\href{https://github.com/jamesyoung-15/cpp_practice/tree/main/Student_Management}{\underline {Student Management System}}} $|$ \emph{C++}}{}
+      %     \resumeItemListStart
+      %       \resumeItem{\normalsize{Created a student record management system written in C++ that can insert, print, search, and delete student record.}}
+      %       \resumeItem{\normalsize{Done using linked list to manage student data.}}
+      %     \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/jamesyoung-15/homeserver}{\underline {Home Server}}} $|$ \emph{Linux}}{}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Built home server running bare metal Ubuntu server to host various services such as NextCloud with Docker.}}
+            \resumeItem{\normalsize{Became familiar and comfortable around Linux and command-line interface. Also learned and applied various networking concepts such as reverse proxies, vlans, etc.}}
+      \resumeItemListEnd
+
     \resumeSubHeadingListEnd
 
 
 
 %
 %-----------SKILLS-----------
-\vspace{-3pt}
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
@@ -193,12 +182,25 @@
  \end{itemize}
 
 
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
 
+    \resumeSubheading
+      {Student Helper (Part Time)}{June 2021 -- July 2021}
+      {HKUST}{}
+      \resumeItemListStart 
+        \resumeItem{\normalsize{Helped school event by sending out invitations to primary, secondary, and tertiary schools in HK. Worked in a small team to compile mailing list of all the schools in Excel then sent invitations using Outlook.}}
+        \resumeItem{\normalsize{Helped update and check course materials for class on Canvas}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
 
 %------Extra Curricular-------
 \section{Extracurricular Activities}
     \begin{itemize}[itemsep=-2pt, parsep=5pt] 
         \item  {HKUST Football Team \hfill Jan. 2021 - Present}
+        \item {Project C - Connect x Community (Volunteer Program) \hfill Oct. 2020 - Feb. 2021}
     \end{itemize}
 
 
