@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.6.17)  18 JUN 2023 09:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.5)  20 MAY 2023 04:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/jamesyoung/Documents/Personal_Projects/Resume/resume1/resume_1.tex
-(/home/jamesyoung/Documents/Personal_Projects/Resume/resume1/resume_1.tex
+**/home/jamesyoung/Documents/Personal_Projects/Resume/resume5/resume_5.tex
+(/home/jamesyoung/Documents/Personal_Projects/Resume/resume5/resume_5.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -310,8 +310,8 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \mult@nat@firstbox=\box99
 \colbreak@box=\box100
 \mc@col@check@num=\count285
-) (/usr/share/texmf-dist/tex/generic/pdftex/glyphtounicode.tex) (./resume_1.aux)
-\openout1 = `resume_1.aux'.
+) (/usr/share/texmf-dist/tex/generic/pdftex/glyphtounicode.tex) (./resume_5.aux)
+\openout1 = `resume_5.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
 LaTeX Font Info:    ... okay on input line 106.
@@ -346,9 +346,9 @@ LaTeX Font Info:    ... okay on input line 106.
 \everyMPtoPDFconversion=\toks25
 )
 Package hyperref Info: Link coloring OFF on input line 106.
- (./resume_1.out) (./resume_1.out)
+ (./resume_5.out) (./resume_5.out)
 \@outlinefile=\write3
-\openout3 = `resume_1.out'.
+\openout3 = `resume_5.out'.
 
 
 
@@ -376,7 +376,7 @@ LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10.95> no
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 123.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 161.
+(Font)              <5> on input line 147.
 
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
@@ -385,26 +385,26 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./resume_1.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./resume_5.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `resume_1.out' has not changed.
-(rerunfilecheck)             Checksum: 6E4E7F39863809B39633242A209D7507;682.
+Package rerunfilecheck Info: File `resume_5.out' has not changed.
+(rerunfilecheck)             Checksum: 654B014B5F763BE78D35FEAB788960D9;730.
  ) 
 Here is how much of TeX's memory you used:
  13662 strings out of 476025
- 237110 string characters out of 5796532
+ 237110 string characters out of 5796533
  1875388 words of memory out of 5000000
  33942 multiletter control sequences out of 15000+600000
  520301 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,76p,361b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,76p,361b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on resume_1.pdf (1 page, 151319 bytes).
+Output written on resume_5.pdf (1 page, 147178 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 113 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
  8 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

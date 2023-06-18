@@ -15,7 +15,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{fontawesome5}
+\usepackage{fontawesome}
 \usepackage{multicol}
 \usepackage{graphicx}
 \setlength{\multicolsep}{-3.0pt}
@@ -170,58 +170,15 @@
         \small
             \item Intro. to Computer Science
             \item Programming with C++
+            \item Object-Oriented Programming and Data Structures
             \item Computer Communication Networks
-            \item Electronic Circuits
-            \item Electro-Robot Design
             \item Introduction to Computer Organization and Design
+            \item Matrix Algebra and Applications
         \end{itemize}
     \end{multicols}
         \vspace*{2.0\multicolsep}
     %\resumeSubHeadingListEnd
 \vspace{5pt}
-
-
-%-----------PROJECTS-----------
-\section{PERSONAL PROJECTS}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-        {\href{https://github.com/jamesyoung-15/http-server}{\textbf{\large{\underline{HTTP 1.1 Server}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{C}}}{}
-        \resumeItemListStart
-        \vspace{3pt}
-          \resumeItem{\normalsize{Created a simple HTTP 1.1 web server in C that is able to serve static web pages and images to a client's web browser.}}
-          \resumeItem{\normalsize{Uses concepts of socket programming to connect client and server and HTTP protocol to serve files.}}
-          \resumeItemListEnd
-      
-      %  \resumeProjectHeading
-      %     {\href{https://github.com/jamesyoung-15/cpp_practice/tree/main/Student_Management}{\textbf{\large{\underline{Student Management System}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{C++}}}{}
-      %     \resumeItemListStart
-      %     \vspace{3pt}
-      %       \resumeItem{\normalsize{Created a student record management system that can insert, print, search, and delete student record.}}
-      %       \resumeItem{\normalsize{Done using linked list approach to manage student data.}}
-      %     \resumeItemListEnd 
-      
-      \resumeProjectHeading
-      {\href{https://github.com/jamesyoung-15/esp32-dht11-server}{\textbf{\large{\underline{ESP32 Temperature and Humidity Monitor}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{C}}}{}
-      \resumeItemListStart
-      \vspace{3pt}
-        \resumeItem{\normalsize{Created an IoT temperature and humidity sensor using an ESP32 and DHT11 sensor and programmed in C with ESP-IDF framework.}}
-        \resumeItem{\normalsize{Program reads the sensor data from GPIO, converts it to temperature and humidity, then sends the data over a HTTP server to be able to view the data on a webpage.}}
-      \resumeItemListEnd
-      
-      \resumeProjectHeading
-          {\href{https://github.com/jamesyoung-15/homeserver}{\textbf{\large{\underline{Home Server}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{Linux, Bash}}}{}
-          \resumeItemListStart
-          \vspace{3pt}
-            \resumeItem{\normalsize{Built home server running bare metal Ubuntu server to host services such as NextCloud with
-            Docker.}}
-            \resumeItem{\normalsize{Became familiar and comfortable around Linux and the command-line interface. Also learned and applied various networking concepts such as reverse proxies, vlans, etc.}}
-          \resumeItemListEnd
-          
-          \resumeSubHeadingListEnd
-\vspace{3pt}
-
-%
-
 
 %-----------PROGRAMMING SKILLS-----------
 \section{SKILLS}
@@ -229,23 +186,57 @@
     \small{\item{
      \textbf{\normalsize{Programming Languages:}}{ \normalsize{C, C++, Python}} \\
      \vspace{1pt}
-     \textbf{\normalsize{Tools/Software:}}{\normalsize{ Linux, Git, Bash}} \\
+     \textbf{\normalsize{Tools/Software:}}{\normalsize{ Linux, Git, Docker}} \\
      \vspace{1pt}
      \textbf{\normalsize{Spoken Languages:}}{\normalsize{ English (Native), Mandarin (Conversational)}} \\
     }}
  \end{itemize}
 \vspace{1pt}
 
+
+%-----------PROJECTS-----------
+\section{PERSONAL PROJECTS}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\href{https://github.com/jamesyoung-15/http-server}{\textbf{\large{HTTP 1.1 Server}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{C}}}{}
+        \resumeItemListStart
+        \vspace{3pt}
+          \resumeItem{\normalsize{Created a simple HTTP 1.1 web server in C that is able to serve static web pages and images to a client's web browser.}}
+          \resumeItem{\normalsize{Uses concepts of socket programming to connect client and server and HTTP protocol to serve files.}}
+          \resumeItemListEnd
+      
+
+      
+      \resumeProjectHeading
+      {\href{https://github.com/jamesyoung-15/Mini-Robot-Cleaner}{\textbf{\large{Mini Robot Cleaner}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{C, Python}}}{}
+      \resumeItemListStart
+      \vspace{3pt}
+        \resumeItem{\normalsize{Created a robot car with a STM32 board that can be wirelessly controlled through UDP transmissions and also has an automatic free roam mode}} 
+        \resumeItem{\normalsize{Integrated the bubble rebound algorithm for avoiding obstacles in free roam mode using 3 ultrasonic sensors}}
+        \resumeItem{\normalsize{Used Python and PyQT5 to create GUI for controlling the robot wirelessly}}
+      \resumeItemListEnd
+      
+      \resumeProjectHeading
+          {\href{https://github.com/jamesyoung-15/Tic-Tac-Toe-Minimax}{\textbf{\large{Tic-Tac-Toe with Minimax}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{C++}}}{}
+          \resumeItemListStart
+          \vspace{3pt}
+            \resumeItem{\normalsize{Created a terminal tic-tac-toe game with option to either play against AI or another person.}}
+            \resumeItem{\normalsize{AI uses minimax algorithm to determine the best move each turn. Used tree data-structure for storing different board states in each turn.}}
+          \resumeItemListEnd
+          
+          \resumeSubHeadingListEnd
+\vspace{3pt}
+
+
 %-----------EXPERIENCE-----------
 \section{Work Experience}
   \resumeSubHeadingListStart
     \vspace{3pt}
     \resumeSubheading
-      {HKUST Student Helper}{June 2021 -- July 2021} 
-      {}{}
+    {\href{https://github.com/jamesyoung-15/Internship-GraphiteVentureLimited}{{IoT Intern $|$ Graphite Venture Limited} \raisebox{-0.1\height} \faExternalLink}}{December 2022 -- May 2023} {}{}
       \resumeItemListStart
-        \resumeItem{\normalsize{Helped school event by sending out invitations to primary, secondary, and tertiary schools in HK. Worked in a small team to compile mailing list of all the schools in Excel then sent invitations using Outlook.}}
-        \resumeItem{\normalsize{Helped update and check course materials for class on Canvas}}
+        \resumeItem{\normalsize{Developed Arduino libraries for reading water sensor data with ESP32 and sending sensor data to AWS IoT Core through MQTT with a SIM7600G module.}}
+        \resumeItem{\normalsize{Created an Arduino library for communicating to multiple ESP32 with ESP-Now protocol.}}
       \resumeItemListEnd  
   \resumeSubHeadingListEnd
 \vspace{1pt}

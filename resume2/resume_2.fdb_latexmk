@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1684152698 "/home/jamesyoung/Documents/Personal_Projects/Resume/resume2/resume_2.tex" "resume_2.pdf" "resume_2" 1684152699 2
-  "/home/jamesyoung/Documents/Personal_Projects/Resume/resume2/resume_2.tex" 1684152698 9137 8e417244a870b5f5930b27d9f53dd816 ""
+["pdflatex"] 1684529136 "/home/jamesyoung/Documents/Personal_Projects/Resume/resume2/resume_2.tex" "resume_2.pdf" "resume_2" 1684529137 0
+  "/home/jamesyoung/Documents/Personal_Projects/Resume/resume2/resume_2.tex" 1684529136 8653 0cdc1e3728deab5b66174e0d7874242b ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1678899023 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1680514707 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1680514707 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -123,9 +123,6 @@
   "/usr/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-generic.tex" 1678899023 33234 40b369fd6c8364bdcc88401c4c1db5bf ""
   "/usr/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-pdftex.tex" 1678899023 46429 f7ffa71c62c5257edd5542253d4cea15 ""
   "/usr/share/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd" 1678899023 519 e730d6099b4b4ed4da396d7b545ddf49 ""
-  "/usr/share/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic-helper.sty" 1678899023 1796 6d3390e7a3f2a0f63ce89532aa30ac20 ""
-  "/usr/share/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping.def" 1678899023 107808 07e47606922c76b1824e149c54155c4c ""
-  "/usr/share/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty" 1678899023 8112 16dbb19fca3f2df864fea49874356f35 ""
   "/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1680514707 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1680514707 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def" 1680514707 19448 1e988b341dda20961a6b931bcde55519 ""
@@ -145,9 +142,6 @@
   "/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty" 1680514707 22555 6d8e155cfef6d82c3d5c742fea7c992e ""
   "/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty" 1680514707 13815 760b0c02f691ea230f5359c4e1de23a7 ""
   "/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1680514707 30429 213676d4c7327a21d91ddaed900e7b81 ""
-  "/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty" 1680514707 6107 5cfea8a675c58918b8c04be10261e48c ""
-  "/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty" 1680514707 4674 257c150d9d5c2fbc229303c8beaf6228 ""
-  "/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1680514707 6812 3c152a1c8d562d7b7291c4839b61a5c3 ""
   "/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1680514707 678 4792914a8f45be57bb98413425e4c7af ""
   "/usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty" 1680514707 5766 13a9e8766c47f30327caf893ece86ac8 ""
   "/usr/share/texmf-dist/tex/latex/marvosym/marvosym.sty" 1680514707 9393 ceaf2ea8eb2c81fdb168323fc5fffc89 ""
@@ -174,9 +168,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1680514707 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1680636365 4491781 539e3b5e308794ddb50e5f94f0e971f4 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1680636343 8204066 469d2966de15637ef9b516962d2a3c1e ""
-  "resume_2.aux" 1684152699 1308 dc155755debfe590b8645d648402a8c3 "pdflatex"
-  "resume_2.out" 1684152699 730 fa5a7e5a9c7b405816c977565d88ccfc "pdflatex"
-  "resume_2.tex" 1684152698 9137 8e417244a870b5f5930b27d9f53dd816 ""
+  "resume_2.aux" 1684529137 1308 93385663476c505662ad9b9dbbad3ade "pdflatex"
+  "resume_2.out" 1684529137 730 eff84b35beff743900e4a308a772cb70 "pdflatex"
+  "resume_2.tex" 1684529136 8653 0cdc1e3728deab5b66174e0d7874242b ""
   (generated)
   "resume_2.aux"
   "resume_2.log"

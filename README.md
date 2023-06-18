@@ -2,5 +2,6 @@
 Latex resumes from templates in overleaf.
 
 ## Versions
-Resume 1 and Resume 2: More networking/IT related
-Resume 3 and Resume 4: More software geared
+
+Resume 1, Resume 2, Resume 3: Software development geared
+Resume 4, Resume 5, Resume 6: Robotics/Embedded Systems geared
