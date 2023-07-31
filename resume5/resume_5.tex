@@ -53,7 +53,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-6pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -94,7 +94,7 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.05in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
@@ -114,6 +114,7 @@
     \href{https://linkedin.com/in/jamesyyoung}{\faLinkedin { linkedin.com/in/jamesyyoung}}
 \end{center}
 
+\vspace{-5pt}
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -130,78 +131,84 @@
         \small
             \item Intro. to Computer Science
             \item Programming with C++
+            \item Object-Oriented Programming and Data Structures
             \item Intro. to Computer Organization and Design
-            \item Electronic Circuits
-            \item Electro-Robot Design
             \item Computer Communication Networks
+            \item Electro-Robot Design
+            \item Electronic Circuits
         \end{itemize}
     \end{multicols}
 
+%-----------SKILLS-----------
+\vspace{-20pt}
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: C, C++, Javascript, Python, SQL (Postgres)} \\
+     \textbf{Hardware}{: STM32, ESP, Raspberry Pi, Arduino} \\
+     \textbf{Protocols}{: UART, I2C, SPI} \\
+     \textbf{Tools/Platforms}{: Git, Docker, Linux} \\
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+    \section{Work Experience}
+    \resumeSubHeadingListStart
+  
+      \resumeSubheading
+        {\href{https://github.com/jamesyoung-15/Internship-GraphiteVentureLimited}{{IoT Intern $|$ Graphite Venture Limited} \small \faExternalLink*}}{December 2022 -- May 2023}
+        {C++, ESP32, Arduino}{(Full and Part Time)}
+        \vspace{1pt}
+        \resumeItemListStart 
+          \resumeItem{\normalsize{Developed Arduino libraries for reading water sensor data with ESP32 and sending sensor data to AWS IoT Core through MQTT with a SIM7600G module.}}
+          \resumeItem{\normalsize{Used RS485 for reading sensor data with ESP32 and USART for sending data to sim module.}}
+          \resumeItem{\normalsize{Created an Arduino library for communicating to multiple ESP32 with ESP-Now protocol.}}
+        \resumeItemListEnd
+  
+    \resumeSubHeadingListEnd
 
 %-----------Personal PROJECTS-----------
-\section{Personal Projects}
+\section{Projects}
     \resumeSubHeadingListStart
+      
+
       \resumeProjectHeading
-      {\textbf{\href{https://github.com/jamesyoung-15/http-server}{\underline {HTTP 1.1 Web Server}}} $|$ \emph{C}}{}
+      {\textbf{\href{https://github.com/jamesyoung-15/Mini-Robot-Cleaner}{ {Mini Robot Cleaner} \small{\faExternalLink*}}}  $|$  \emph{STM32, C, Python}}{}
       \resumeItemListStart
-        \resumeItem{\normalsize{Created a simple HTTP 1.1 web server in C that is able to serve static web pages and images to a client's web browser.}} 
-        \resumeItem{\normalsize{Uses concepts of socket programming to connect client and server and HTTP protocol to serve files.}}
+        \resumeItem{\normalsize{Created a robot car with a STM32 board that can be wirelessly controlled through UDP transmissions and also has an autonomous free roam mode}} 
+        \resumeItem{\normalsize{Integrated the bubble rebound algorithm for obstacle avoidance in free roam mode using 3 ultrasonic sensors}}
+        \resumeItem{\normalsize{Used Python for socket programming to send and receive UDP transmissions and PyQT5 to create GUI to control robot wirelessly}}
       \resumeItemListEnd
+
       \resumeProjectHeading
-      {\textbf{\href{https://github.com/jamesyoung-15/esp32-dht11-serve}{\underline {ESP32 Temperature and Humidity Monitor}}} $|$ \emph{C}}{}
+      {\textbf{\href{https://github.com/jamesyoung-15/IoT-Air-Quality-Monitoring/}{ {IoT Air Quality Monitor} \small{\faExternalLink*}}}  $|$  \emph{STM32, ESP32, C}}{}
       \resumeItemListStart
-        \resumeItem{\normalsize{Created an IoT temperature and humidity sensor using an ESP32 and DHT11 sensor and programmed in C with ESP-IDF framework.}}
-        \resumeItem{\normalsize{Program reads the sensor data from GPIO, converts it to temperature and humidity, then sends the data over a HTTP server to be able to view the data on a webpage.}}
+        \resumeItem{\normalsize{Created an IoT monitoring station where users can view the temperature, humidity, CO2, and TVOC sensor readings on a web browser.}}
+        \resumeItem{\normalsize{Measures sensor data via I2C with STM32, then sends sensor data to ESP32 through UART.}}
+        \resumeItem{\normalsize{Used ESP32 to create web server and sends sensor data as HTTP response to client requests.}}
       \resumeItemListEnd
-      % \resumeProjectHeading
-      %     {\textbf{\href{https://github.com/jamesyoung-15/cpp_practice/tree/main/Student_Management}{\underline {Student Management System}}} $|$ \emph{C++}}{}
-      %     \resumeItemListStart
-      %       \resumeItem{\normalsize{Created a student record management system written in C++ that can insert, print, search, and delete student record.}}
-      %       \resumeItem{\normalsize{Done using linked list to manage student data.}}
-      %     \resumeItemListEnd
+
       \resumeProjectHeading
-      {\textbf{\href{https://github.com/jamesyoung-15/cpp_practice/tree/main/Student_Management}{\underline{Student Management System}}}  $|$ \emph{C++}}{}
+      {\textbf{\href{https://github.com/jamesyoung-15/Tic-Tac-Toe-Minimax}{ {Tic-Tac-Toe w/ Minimax AI} \small{\faExternalLink*}}}  $|$  \emph{C++}}{}
       \resumeItemListStart
-      \vspace{3pt}
-        \resumeItem{\normalsize{Created a student record management system that can insert, print, search, and delete student record.}}
-        \resumeItem{\normalsize{Done using linked list approach to manage student data.}}
-      \resumeItemListEnd 
+        \resumeItem{\normalsize{Created a terminal tic-tac-toe game with option to either play against AI or another person.}}
+        \resumeItem{\normalsize{AI uses minimax algorithm to determine the best move each turn. Used tree data-structure for storing different board states in each turn.}}
+      \resumeItemListEnd
+
 
     \resumeSubHeadingListEnd
 
 
 
-%
-%-----------SKILLS-----------
-\section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Programming Languages}{: C, C++, Python} \\
-     \textbf{Tools/Software}{: Git, Linux, Bash} \\
-     \textbf{Languages}{: English (Native), Mandarin (Conversational)} \\
-    }}
- \end{itemize}
 
 
-%-----------EXPERIENCE-----------
-\section{Work Experience}
-  \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Student Helper (Part Time)}{June 2021 -- July 2021}
-      {HKUST}{}
-      \resumeItemListStart 
-        \resumeItem{\normalsize{Helped school event by sending out invitations to primary, secondary, and tertiary schools in HK. Worked in a small team to compile mailing list of all the schools in Excel then sent invitations using Outlook.}}
-        \resumeItem{\normalsize{Helped update and check course materials for class on Canvas}}
-      \resumeItemListEnd
 
-  \resumeSubHeadingListEnd
 
 %------Extra Curricular-------
 \section{Extracurricular Activities}
     \begin{itemize}[itemsep=-2pt, parsep=5pt] 
         \item  {HKUST Football Team \hfill Jan. 2021 - Present}
-        \item {Project C - Connect x Community (Volunteer Program) \hfill Oct. 2020 - Feb. 2021}
     \end{itemize}
 
 
