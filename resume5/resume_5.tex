@@ -53,7 +53,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -114,7 +114,6 @@
     \href{https://linkedin.com/in/jamesyyoung}{\faLinkedin { linkedin.com/in/jamesyyoung}}
 \end{center}
 
-\vspace{-5pt}
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -134,8 +133,7 @@
             \item Object-Oriented Programming and Data Structures
             \item Intro. to Computer Organization and Design
             \item Computer Communication Networks
-            \item Electro-Robot Design
-            \item Electronic Circuits
+            \item Data-Driven Portfolio Optimization
         \end{itemize}
     \end{multicols}
 
@@ -144,10 +142,9 @@
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming Languages}{: C, C++, Javascript, Python, SQL (Postgres)} \\
-     \textbf{Hardware}{: STM32, ESP, Raspberry Pi, Arduino} \\
-     \textbf{Protocols}{: UART, I2C, SPI} \\
+     \textbf{Programming Languages}{: C++, Javascript, Python, SQL (Postgres), HTML/CSS} \\
      \textbf{Tools/Platforms}{: Git, Docker, Linux} \\
+     \textbf{Languages}{: English (Native), Mandarin (Conversational)} \\
     }}
  \end{itemize}
 
@@ -161,7 +158,6 @@
         \vspace{1pt}
         \resumeItemListStart 
           \resumeItem{\normalsize{Developed Arduino libraries for reading water sensor data with ESP32 and sending sensor data to AWS IoT Core through MQTT with a SIM7600G module.}}
-          \resumeItem{\normalsize{Used RS485 for reading sensor data with ESP32 and USART for sending data to sim module.}}
           \resumeItem{\normalsize{Created an Arduino library for communicating to multiple ESP32 with ESP-Now protocol.}}
         \resumeItemListEnd
   
@@ -172,28 +168,31 @@
     \resumeSubHeadingListStart
       
 
+    \resumeProjectHeading
+    {\textbf{\href{https://github.com/jamesyoung-15/homeserver}{ {Home Server} \small{\faExternalLink*}}}    \emph{}}{}
+      \resumeItemListStart
+      \vspace{3pt}
+        \resumeItem{\normalsize{Built home server running bare metal Ubuntu server to host services such as NextCloud with Docker.}}
+        \resumeItem{\normalsize{Became familiar and comfortable around Linux and the command-line interface. Also learned and applied knowledge of networking concepts such as reverse proxies.}}      
+      \resumeItemListEnd
+
       \resumeProjectHeading
-      {\textbf{\href{https://github.com/jamesyoung-15/Mini-Robot-Cleaner}{ {Mini Robot Cleaner} \small{\faExternalLink*}}}  $|$  \emph{STM32, C, Python}}{}
+      {\textbf{\href{https://todo.jamesyy.info/}{ {To-Do List} \small{\faExternalLink*}}}}{}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Created a to-do list website using Django framework with user authentication and ability for user to create, update, and delete each task.}} 
+        \resumeItem{\normalsize{Deployed Django application on an AWS EC2 instance with Docker using Gunicorn, Nginx-Proxy, Letsencrypt, and Postgres as database.}}
+        % \resumeItem{\normalsize{}}
+      \resumeItemListEnd
+
+      \resumeProjectHeading
+      {\textbf{\href{https://github.com/jamesyoung-15/Mini-Robot-Cleaner}{ {Mini Robot Cleaner} \small{\faExternalLink*}}}    \emph{}}{}
       \resumeItemListStart
         \resumeItem{\normalsize{Created a robot car with a STM32 board that can be wirelessly controlled through UDP transmissions and also has an autonomous free roam mode}} 
-        \resumeItem{\normalsize{Integrated the bubble rebound algorithm for obstacle avoidance in free roam mode using 3 ultrasonic sensors}}
-        \resumeItem{\normalsize{Used Python for socket programming to send and receive UDP transmissions and PyQT5 to create GUI to control robot wirelessly}}
+        \resumeItem{\normalsize{Integrated the bubble rebound algorithm for avoiding obstacles in free roam mode using 3 ultrasonic sensors}}
+        \resumeItem{\normalsize{Used Python for socket programming and PyQT5 to create GUI to control robot wirelessly}}
       \resumeItemListEnd
+      
 
-      \resumeProjectHeading
-      {\textbf{\href{https://github.com/jamesyoung-15/IoT-Air-Quality-Monitoring/}{ {IoT Air Quality Monitor} \small{\faExternalLink*}}}  $|$  \emph{STM32, ESP32, C}}{}
-      \resumeItemListStart
-        \resumeItem{\normalsize{Created an IoT monitoring station where users can view the temperature, humidity, CO2, and TVOC sensor readings on a web browser.}}
-        \resumeItem{\normalsize{Measures sensor data via I2C with STM32, then sends sensor data to ESP32 through UART.}}
-        \resumeItem{\normalsize{Used ESP32 to create web server and sends sensor data as HTTP response to client requests.}}
-      \resumeItemListEnd
-
-      \resumeProjectHeading
-      {\textbf{\href{https://github.com/jamesyoung-15/Tic-Tac-Toe-Minimax}{ {Tic-Tac-Toe w/ Minimax AI} \small{\faExternalLink*}}}  $|$  \emph{C++}}{}
-      \resumeItemListStart
-        \resumeItem{\normalsize{Created a terminal tic-tac-toe game with option to either play against AI or another person.}}
-        \resumeItem{\normalsize{AI uses minimax algorithm to determine the best move each turn. Used tree data-structure for storing different board states in each turn.}}
-      \resumeItemListEnd
 
 
     \resumeSubHeadingListEnd
