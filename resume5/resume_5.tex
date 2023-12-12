@@ -75,10 +75,11 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
+\newcommand{\resumeSubheadingNoSkill}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+    % \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -120,7 +121,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {The Hong Kong University of Science and Technology}{Hong Kong}
-      {BEng in Electronic Engineering}{Sept. 2020 -- Present}
+      {BEng in Electronic Engineering - Minor in Information Technology}{Sept. 2020 -- Present}
   \resumeSubHeadingListEnd
 
 \section{Relevant Coursework}
@@ -128,12 +129,14 @@
     \begin{multicols}{2}
         \begin{itemize}[itemsep=-1pt, parsep=3pt]
         \small
-            \item Intro. to Computer Science
+            % \item Intro. to Computer Science
             \item Programming with C++
             \item Object-Oriented Programming and Data Structures
             \item Intro. to Computer Organization and Design
             \item Computer Communication Networks
-            \item Data-Driven Portfolio Optimization
+            % \item Data-Driven Portfolio Optimization
+            \item Deep Learning in Computer Vision
+            \item Machine Learning and Information Processing for Robotics
         \end{itemize}
     \end{multicols}
 
@@ -143,25 +146,36 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Programming Languages}{: C++, Javascript, Python, SQL (Postgres), HTML/CSS} \\
-     \textbf{Tools/Platforms}{: Git, Docker, Linux} \\
-     \textbf{Languages}{: English (Native), Mandarin (Conversational)} \\
+     \textbf{Tools/Platforms}{: Git, Docker, Linux, AWS} \\
+     \textbf{Languages}{: English (Native)} \\
     }}
  \end{itemize}
 
 %-----------EXPERIENCE-----------
-    \section{Work Experience}
-    \resumeSubHeadingListStart
-  
-      \resumeSubheading
-        {\href{https://github.com/jamesyoung-15/Internship-GraphiteVentureLimited}{{IoT Intern $|$ Graphite Venture Limited} \small \faExternalLink*}}{December 2022 -- May 2023}
-        {C++, ESP32, Arduino}{(Full and Part Time)}
-        \vspace{1pt}
-        \resumeItemListStart 
-          \resumeItem{\normalsize{Developed Arduino libraries for reading water sensor data with ESP32 and sending sensor data to AWS IoT Core through MQTT with a SIM7600G module.}}
-          \resumeItem{\normalsize{Created an Arduino library for communicating to multiple ESP32 with ESP-Now protocol.}}
-        \resumeItemListEnd
-  
-    \resumeSubHeadingListEnd
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheadingNoSkill
+      {\href{https://github.com/jamesyoung-15/Internship-GraphiteVentureLimited}{{IoT Intern $|$ Graphite Venture Limited}}}{December 2022 -- May 2023}
+      % {C++, ESP32, Arduino}{(Full and Part Time)}
+      % \vspace{1pt}
+      \resumeItemListStart 
+        \resumeItem{\normalsize{Developed Arduino libraries for reading water sensor data with ESP32 and sending sensor data to AWS IoT Core through MQTT with a SIM7600G module.}}
+        % \resumeItem{\normalsize{Created an Arduino library for communicating to multiple ESP32 with ESP-Now protocol.}}
+      \resumeItemListEnd
+
+
+    \resumeSubheadingNoSkill
+      {\href{https://github.com/jamesyoung-15/ESP32Cam-MeterReading}{{Electronic Engineering Intern $|$ Kolour Think Tank}}}{August 2023}
+      % {\href{https://github.com/jamesyoung-15/ESP32Cam-MeterReading}{{Electronic Engineering Intern $|$ Kolour Think Tank}\small{\faExternalLink*}}}{August 2023}
+      % {ESP32, AWS}{(Full Time)}
+      % \vspace{1pt}
+      \resumeItemListStart 
+        \resumeItem{\normalsize{Developed a digital utility meter reader that takes images of a utility meter with an ESP32-CAM, sends the image to AWS S3, reads the meter reading with AWS Rekognition, and stores the data in AWS DynamoDB.}}
+        % \resumeItem{\normalsize{Created an Arduino library for communicating to multiple ESP32 with ESP-Now protocol.}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
 
 %-----------Personal PROJECTS-----------
 \section{Projects}
@@ -169,27 +183,26 @@
       
 
     \resumeProjectHeading
-    {\textbf{\href{https://github.com/jamesyoung-15/homeserver}{ {Home Server} \small{\faExternalLink*}}}    \emph{}}{}
-      \resumeItemListStart
-      \vspace{3pt}
-        \resumeItem{\normalsize{Built home server running bare metal Ubuntu server to host services such as NextCloud with Docker.}}
-        \resumeItem{\normalsize{Became familiar and comfortable around Linux and the command-line interface. Also learned and applied knowledge of networking concepts such as reverse proxies.}}      
-      \resumeItemListEnd
+    {\textbf{\href{https://github.com/jamesyoung-15/Mini-Robot-Cleaner}{ {Mini Robot Cleaner} \small{\faExternalLink*}}}    \emph{}}{}
+    \resumeItemListStart
+      \resumeItem{\normalsize{Created a robot car with a STM32 board that can be wirelessly controlled through UDP transmissions and also has an autonomous free roam mode}} 
+      \resumeItem{\normalsize{Integrated the bubble rebound algorithm for avoiding obstacles in free roam mode using 3 ultrasonic sensors}}
+      \resumeItem{\normalsize{Used Python for socket programming and PyQT5 to create GUI to control robot wirelessly}}
+    \resumeItemListEnd
 
       \resumeProjectHeading
-      {\textbf{\href{https://todo.jamesyy.info/}{ {To-Do List} \small{\faExternalLink*}}}}{}
+      {\textbf{\href{https://todo.jamesyy.info/}{ {To-Do List} \small{\faExternalLink*}}}   \emph{}}{}
       \resumeItemListStart
-        \resumeItem{\normalsize{Created a to-do list website using Django framework with user authentication and ability for user to create, update, and delete each task.}} 
+        \resumeItem{\normalsize{Created a to-do list website using Django framework with user authentication.}} 
         \resumeItem{\normalsize{Deployed Django application on an AWS EC2 instance with Docker using Gunicorn, Nginx-Proxy, Letsencrypt, and Postgres as database.}}
         % \resumeItem{\normalsize{}}
       \resumeItemListEnd
 
       \resumeProjectHeading
-      {\textbf{\href{https://github.com/jamesyoung-15/Mini-Robot-Cleaner}{ {Mini Robot Cleaner} \small{\faExternalLink*}}}    \emph{}}{}
+      {\textbf{\href{https://github.com/jamesyoung-15/Tic-Tac-Toe-Minimax}{ {Tic-Tac-Toe with Minimax} \faExternalLink*}} $|$ \emph{}}{}
       \resumeItemListStart
-        \resumeItem{\normalsize{Created a robot car with a STM32 board that can be wirelessly controlled through UDP transmissions and also has an autonomous free roam mode}} 
-        \resumeItem{\normalsize{Integrated the bubble rebound algorithm for avoiding obstacles in free roam mode using 3 ultrasonic sensors}}
-        \resumeItem{\normalsize{Used Python for socket programming and PyQT5 to create GUI to control robot wirelessly}}
+        \resumeItem{\normalsize{A terminal tic-tac-toe game with option to either play against AI or another person.}}
+        \resumeItem{\normalsize{AI uses minimax algorithm to determine the best move each turn. Used tree data-structure for storing different board states in each turn.}}
       \resumeItemListEnd
       
 
