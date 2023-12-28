@@ -9,3 +9,4 @@ services:
       - ./resume5:/usr/share/nginx/html/resume5
     ports:
       - "1499:80"
+    restart: always
