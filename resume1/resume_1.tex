@@ -130,13 +130,11 @@
         \begin{itemize}[itemsep=-1pt, parsep=3pt]
         \footnotesize
             % \item Intro. to Computer Science
-            \item Programming with C++
             \item Object-Oriented Programming and Data Structures
             \item Intro. to Computer Organization and Design
             \item Computer Communication Networks
             % \item Data-Driven Portfolio Optimization
-            \item Deep Learning in Computer Vision
-            \item Machine Learning and Information Processing for Robotics
+            \item Cloud Computing and Big Data Systems
         \end{itemize}
     \end{multicols}
 
@@ -145,8 +143,9 @@
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming Languages}{: C++, Javascript, Python, HTML/CSS} \\
-     \textbf{Tools/Platforms}{: Git, Docker, Linux, AWS (DynamoDB, Lambda, API Gateway, EC2, S3)} \\
+     \textbf{Programming Languages}{: Python, C++, Javascript} \\
+     \textbf{Tools/Platforms}{: Linux, Git, Docker, Ansible, Jenkins} \\ 
+     \textbf{Cloud}{: AWS (DynamoDB, Lambda, API Gateway, EC2, S3)} \\
      \textbf{Languages}{: English (Native)} \\
     }}
  \end{itemize}
@@ -156,24 +155,34 @@
   \resumeSubHeadingListStart
 
     \resumeSubheadingNoSkill
+        {\href{https://github.com/jamesyoung-15/FallDetection}{{Software Developer Intern $|$ Intelligent Design Technology}}}{December 2023 -- Feburary 2024}
+        % {Python}{(Full Time)}
+        % \vspace{1pt}
+        \resumeItemListStart 
+          \resumeItem{\normalsize{Developed a prototype for real-time human fall detection using pose estimation with Movenet and heuristics for determining fall.}}
+          % \resumeItem{\normalsize{Created an Arduino library for communicating to multiple ESP32 with ESP-Now protocol.}}
+        \resumeItemListEnd
+
+    \resumeSubheadingNoSkill
+        {\href{https://github.com/jamesyoung-15/ESP32Cam-MeterReading}{{Electronic Engineering Intern $|$ Kolour Think Tank}}}{August 2023}
+        % {\href{https://github.com/jamesyoung-15/ESP32Cam-MeterReading}{{Electronic Engineering Intern $|$ Kolour Think Tank}\small{\faExternalLink*}}}{August 2023}
+        % {ESP32, AWS}{(Full Time)}
+        % \vspace{1pt}
+        \resumeItemListStart 
+          \resumeItem{\normalsize{Developed a digital utility meter reader that takes images of a utility meter with an ESP32-CAM, stores images to AWS S3, reads the meter reading with Rekognition, and stores the data in DynamoDB.}}
+          % \resumeItem{\normalsize{Created an Arduino library for communicating to multiple ESP32 with ESP-Now protocol.}}
+        \resumeItemListEnd
+
+    \resumeSubheadingNoSkill
       {\href{https://github.com/jamesyoung-15/Internship-GraphiteVentureLimited}{{IoT Intern $|$ Graphite Venture Limited}}}{December 2022 -- May 2023}
       % {C++, ESP32, Arduino}{(Full and Part Time)}
       % \vspace{1pt}
       \resumeItemListStart 
-        \resumeItem{\normalsize{Developed Arduino libraries for reading water sensor data with ESP32 and sending sensor data to AWS IoT Core through MQTT with a SIM7600G module.}}
+        \resumeItem{\normalsize{Developed Arduino libraries for reading water sensor data with ESP32 and sending sensor data to AWS IoT Core through MQTT.}}
         % \resumeItem{\normalsize{Created an Arduino library for communicating to multiple ESP32 with ESP-Now protocol.}}
       \resumeItemListEnd
 
 
-    \resumeSubheadingNoSkill
-      {\href{https://github.com/jamesyoung-15/ESP32Cam-MeterReading}{{Electronic Engineering Intern $|$ Kolour Think Tank}}}{August 2023}
-      % {\href{https://github.com/jamesyoung-15/ESP32Cam-MeterReading}{{Electronic Engineering Intern $|$ Kolour Think Tank}\small{\faExternalLink*}}}{August 2023}
-      % {ESP32, AWS}{(Full Time)}
-      % \vspace{1pt}
-      \resumeItemListStart 
-        \resumeItem{\normalsize{Developed a digital utility meter reader that takes images of a utility meter with an ESP32-CAM, sends the image to AWS S3, reads the meter reading with AWS Rekognition, and stores the data in AWS DynamoDB.}}
-        % \resumeItem{\normalsize{Created an Arduino library for communicating to multiple ESP32 with ESP-Now protocol.}}
-      \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -183,37 +192,26 @@
       
 
     \resumeProjectHeading
-    {\textbf{\href{https://airqualitydashboard.jyylab.com/}{ {Air Quality Monitoring Dashboard} \small{\faExternalLink*}}}    \emph{}}{}
+    {\textbf{\href{https://airqualitydashboard.jyylab.com/}{ {Air Quality Monitoring Dashboard}}}    \emph{}}{}
     \resumeItemListStart
-      \resumeItem{\normalsize{A fullstack project that stores and displays my home's air quality sensor data on a DynamoDB database using AWS services.}} 
-      \resumeItem{\normalsize{Data on DynamoDB is stored and retrieved using REST API with API Gateway and Lambda.}}
-      \resumeItem{\normalsize{Front-end uses HTML, CSS, and Javascript to call and display data from API.}}
+      \resumeItem{\normalsize{A fullstack project that stores and displays my home's air quality sensor data using AWS services.}} 
+      \resumeItem{\normalsize{Data is stored and retrieved on DynamoDB using REST API with API Gateway and Lambda. Front-end uses HTML, CSS, and Javascript.}}
     \resumeItemListEnd
 
       \resumeProjectHeading
-      {\textbf{\href{https://todo.jamesyy.info/}{ {To-Do List} \small{\faExternalLink*}}}   \emph{}}{}
+      {\textbf{\href{https://github.com/jamesyoung-15/homeserver}{ {Home Server}}} \emph{}}{}
       \resumeItemListStart
-        \resumeItem{\normalsize{Created a to-do list website using Django framework with user authentication.}} 
-        \resumeItem{\normalsize{Deployed Django application on an AWS EC2 instance with Docker using Gunicorn, Nginx-Proxy, Letsencrypt, and Postgres as database.}}
-        % \resumeItem{\normalsize{}}
+        \resumeItem{\normalsize{Built home server running Proxmox for self-hosting services and applications such as Nextcloud using Linux containers and virtual machines.}}
+        \resumeItem{\normalsize{Applied various tools such as Docker for containerization, Grafana for monitoring, and Ansible for automation.}}
       \resumeItemListEnd
 
-
-      \resumeProjectHeading
-      {\textbf{\href{https://github.com/jamesyoung-15/Mini-Robot-Cleaner}{ {Mini Robot Cleaner} \small{\faExternalLink*}}}    \emph{}}{}
-      \resumeItemListStart
-        \resumeItem{\normalsize{Created a robot car with a STM32 board that can be wirelessly controlled through UDP or can roam autonomously}} 
-        \resumeItem{\normalsize{Integrated the bubble rebound algorithm for avoiding obstacles in free roam mode using 3 ultrasonic sensors}}
-        \resumeItem{\normalsize{Used Python for socket programming and PyQT5 to create GUI to control robot wirelessly}}
-      \resumeItemListEnd
-
-      % \resumeProjectHeading
-      % {\textbf{\href{https://github.com/jamesyoung-15/Tic-Tac-Toe-Minimax}{ {Tic-Tac-Toe with Minimax} \faExternalLink*}} $|$ \emph{}}{}
-      % \resumeItemListStart
-      %   \resumeItem{\normalsize{A terminal tic-tac-toe game with option to either play against AI or another person.}}
-      %   \resumeItem{\normalsize{AI uses minimax algorithm to determine the best move each turn. Used tree data-structure for storing different board states in each turn.}}
-      % \resumeItemListEnd
-      
+    \resumeProjectHeading
+    {\textbf{\href{https://github.com/jamesyoung-15/Mini-Robot-Cleaner}{ {Mini Robot Cleaner}}}    \emph{}}{}
+    \resumeItemListStart
+      \resumeItem{\normalsize{Created a robot car cleaner with a STM32 board written in C that can be wirelessly controlled through UDP or can roam autonomously}} 
+      \resumeItem{\normalsize{Integrated the bubble rebound algorithm for avoiding obstacles in free roam mode}}
+      \resumeItem{\normalsize{Used Python for socket programming and PyQT5 to create GUI to control robot wirelessly}}
+    \resumeItemListEnd
 
 
 
@@ -227,10 +225,10 @@
 
 
 %------Extra Curricular-------
-\section{Extracurricular Activities}
-    \begin{itemize}[itemsep=-2pt, parsep=5pt] 
-        \item  {HKUST Football Team \hfill Jan. 2021 - Present}
-    \end{itemize}
+% \section{Extracurricular Activities}
+%     \begin{itemize}[itemsep=-2pt, parsep=5pt] 
+%         \item  {HKUST Football Team \hfill Jan. 2021 - Present}
+%     \end{itemize}
 
 
 
