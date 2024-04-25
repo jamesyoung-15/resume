@@ -5,7 +5,6 @@ services:
       - ./resume1:/usr/share/nginx/html/resume1
       - ./resume2:/usr/share/nginx/html/resume2
       - ./resume3:/usr/share/nginx/html/resume3
-      - ./resume4:/usr/share/nginx/html/resume4
     ports:
       - "1499:80"
     restart: always
