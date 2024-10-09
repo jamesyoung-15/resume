@@ -68,8 +68,8 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
@@ -108,8 +108,8 @@
 
 
 \begin{center}
-    \textbf{\Huge \scshape James Young} \\ \vspace{2pt}
-    \small  \faPhone\ {+1 (857) 270-8026} $|$ 
+    \textbf{\Huge \scshape James Young} \\ \vspace{3pt}
+    % \small  \faPhone\ {+1 (857) 270-8026} $|$ 
     \href{mailto:jyyoung@bu.edu}{\faEnvelope { jyyoung@bu.edu}} $|$ 
     \href{https://github.com/jamesyoung-15} {\faGithub\ {jamesyoung-15}} $|$
     \href{https://linkedin.com/in/jamesyyoung}{\faLinkedin { linkedin.com/in/jamesyyoung}}
@@ -128,31 +128,32 @@
       {Boston University}{United States}
       {Master in Computer Science}{Sept. 2024 -- Present}
   \resumeSubHeadingListEnd
-\vspace{-5pt}
+% \vspace{-10pt}
 
 %-----------Certs-----------
 \section{Certifications}
-\vspace{2pt}
-    % \begin{multicols}{2}
-        
-        \begin{itemize}[itemsep=-1pt, parsep=3pt]
+\vspace{-12pt}
+% \vspace{1pt}
+    \begin{multicols}{2}
+        \begin{itemize}[itemsep=-1pt, parsep=3pt, leftmargin=0.21in]
         \small
-            % \item Intro. to Computer Science
+            \item Certified Kubernetes Administrator (CKA)
+            \item HashiCorp Certified: Terraform Associate (003)
             \item AWS Certified Solutions Architect (SAA-C03)
             \item Red Hat Certified System Administrator (RHCSA)
-            % \item HashiCorp Certified: Terraform Associate (003)
+            % \item CompTIA A+ Certification
         \end{itemize}
-    % \end{multicols}
+    \end{multicols}
 
 %-----------SKILLS-----------
-% \vspace{-25pt}
+% \vspace{-15pt}
 \section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+ \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
      \textbf{Programming Languages}{: Python, Javascript, Bash} \\
-     \textbf{Tools/Platforms}{: Git, Terraform, AWS, Docker, Linux (Red-Hat \& Debian-based Distros)} \\ 
+     \textbf{Tools/Platforms}{: Linux, AWS, Kubernetes, Terraform, Ansible, Docker, Git} \\ 
     %  \textbf{Cloud}{: AWS (Lambda, EC2, S3, DynamoDB)} \\
-     \textbf{Others}{: Networking Concepts (VLANs, VPN, DNS)} \\
+     \textbf{Others}{: Networking Concepts (VLANs, VPN, DNS, etc.)} \\
     }}
  \end{itemize}
 
@@ -160,31 +161,29 @@
 \section{Work Experience}
   \resumeSubHeadingListStart
 
-    \resumeSubheadingNoSkill
-        {{{Software Developer Intern $|$ Intelligent Design Technology}}}{December 2023 -- Feburary 2024}
-        % {Python}{(Full Time)}
-        % \vspace{1pt}
+    \resumeSubheading
+        {{{Intelligent Design Technology}}}{Hong Kong}
+        {Software Developer Intern}{December 2023 -- Feburary 2024}
+        \vspace{1pt}
         \resumeItemListStart 
           \resumeItem{\normalsize{Developed a prototype for real-time human fall detection for a Raspberry PI based robot.}}
           \resumeItem{\normalsize{Fall detection uses Tensorflow and Movenet for pose estimation and heuristics for determining fall.}}
         \resumeItemListEnd
 
-    % \resumeSubheadingNoSkill
-    %     {{{Electronic Engineering Intern $|$ Kolour Think Tank}}}{July 2023 -- August 2023}
-    %     % {\href{https://github.com/jamesyoung-15/ESP32Cam-MeterReading}{{Electronic Engineering Intern $|$ Kolour Think Tank}\small{\faExternalLink*}}}{August 2023}
-    %     % {ESP32, AWS}{(Full Time)}
-    %     % \vspace{1pt}
-    %     \resumeItemListStart 
-    %       \resumeItem{\normalsize{Helped create an IoT digital utility meter reader using AWS services and an ESP32-Cam.}}
-    %       \resumeItem{\normalsize{Programmed ESP32-Cam to take images of a utility meter and send the images to S3. Used Rekognition OCR on images to obtain meter reading and stored numerical data into DynamoDB.}}
-    %     \resumeItemListEnd
+    \resumeSubheading
+        {{{Kolour Think Tank}}}{Hong Kong}
+        {Electronic Engineering Intern}{July 2023 -- August 2023}
+        \vspace{1pt}
+        \resumeItemListStart 
+          \resumeItem{\normalsize{Architected a cheap IoT serverless digital utility meter reader using an ESP32-Cam and integrated with AWS services such as S3, Rekognition, DynamoDB.}}
+        \resumeItemListEnd
 
-    \resumeSubheadingNoSkill
-      {{{IoT Intern $|$ Graphite Venture Limited}}}{December 2022 -- May 2023}
-      % {C++, ESP32, Arduino}{(Full and Part Time)}
-      % \vspace{1pt}
+    \resumeSubheading
+      {{{Graphite Venture Limited}}}{Hong Kong}
+      {IoT Intern}{December 2022 -- May 2023}
+      \vspace{1pt}
       \resumeItemListStart 
-        \resumeItem{\normalsize{Developed Arduino libraries for reading water sensor data with ESP32 and sending sensor data to AWS IoT Core through MQTT.}}
+        \resumeItem{\normalsize{Created Arduino libraries for reading water sensor data with ESP32 and sending sensor data to AWS IoT Core.}}
         % \resumeItem{\normalsize{Created an Arduino library for communicating to multiple ESP32 with ESP-Now protocol.}}
       \resumeItemListEnd
 
@@ -197,44 +196,21 @@
     \resumeSubHeadingListStart
 
     \resumeProjectHeading
-        {\textbf{\href{https://github.com/jamesyoung-15/homeserver}{ {Home Server}}} \emph{}}{}
-        \resumeItemListStart
-          \resumeItem{\normalsize{Built homelab running Proxmox for self-hosting services such as file and media server using Linux containers and VMs.}}
-          \resumeItem{\normalsize{Applied various tools such as Docker for containerization, Grafana for monitoring, Ansible for automation, etc.}}
-        \resumeItemListEnd
-
-      \resumeProjectHeading
       {\textbf{\href{https://github.com/jamesyoung-15/serverless-face-blurring}{ {Serverless Face Blurring}}}    \emph{}}{}
       \resumeItemListStart
         \resumeItem{\normalsize{A serverless application that blurs faces on an image using OpenFaaS and Python. Stores the transformed image in a MinIO storage bucket.}} 
         \resumeItem{\normalsize{Application deployable on Kubernetes using MiniKube and Helm charts.}}
       \resumeItemListEnd
 
-
-
-      \resumeProjectHeading
-      {\textbf{\href{https://airqualitydashboard.jyylab.com/}{ {Air Quality Monitoring Dashboard}}}    \emph{}}{}
-      \resumeItemListStart
-        \resumeItem{\normalsize{A fullstack project that stores and displays my home's air quality sensor data using AWS services.}} 
-        \resumeItem{\normalsize{Data is stored and retrieved on DynamoDB using REST API with API Gateway and Lambda. Application deployed on an EC2 instance.}}
-      \resumeItemListEnd
-
+    \resumeProjectHeading
+        {\textbf{\href{https://github.com/jamesyoung-15/homeserver}{ {Home Server}}} \emph{}}{}
+        \resumeItemListStart
+          \resumeItem{\normalsize{Built homelab running Proxmox for self-hosting services such as file and media server using Linux containers and VMs.}}
+          \resumeItem{\normalsize{Applied various tools such as Docker for containerization, Grafana for monitoring, Ansible for automation, etc.}}
+        \resumeItemListEnd
 
 
 
     \resumeSubHeadingListEnd
-
-
-% Replace with Certs in the future
-
-
-
-% ------Extra Curricular-------
-% \section{Extracurricular Activities}
-%     \begin{itemize}[itemsep=-2pt, parsep=5pt] 
-%         \item  {HKUST Football Team \hfill Jan. 2021 - June 2024}
-%     \end{itemize}
-
-
 
 \end{document}
