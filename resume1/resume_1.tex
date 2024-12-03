@@ -174,7 +174,7 @@
         {Electronic Engineering Intern}{July 2023 -- August 2023}
         \vspace{1pt}
         \resumeItemListStart 
-          \resumeItem{\normalsize{Created a IoT serverless digital utility meter reader using an ESP32-Cam and integrated with AWS services such as S3, Rekognition, DynamoDB.}}
+          \resumeItem{\normalsize{Worked on a low-cost IoT serverless digital utility meter reader that ESP32-Cam and integrated with API Gateway, S3, Rekognition, Lambda, and DynamoDB.}}
         \resumeItemListEnd
 
     \resumeSubheading
@@ -182,7 +182,7 @@
       {IoT Intern}{December 2022 -- May 2023}
       \vspace{1pt}
       \resumeItemListStart 
-        \resumeItem{\normalsize{Programmed Arduino libraries for reading water sensor data with ESP32 and sending sensor data to AWS IoT Core.}}
+        \resumeItem{\normalsize{Programmed Arduino libraries for reading water sensor data with ESP32 and sending sensor data to AWS IoT Core with MQTT.}}
         % \resumeItem{\normalsize{Created an Arduino library for communicating to multiple ESP32 with ESP-Now protocol.}}
       \resumeItemListEnd
 
@@ -195,17 +195,18 @@
     \resumeSubHeadingListStart
 
     \resumeProjectHeading
-      {\textbf{\href{https://github.com/jamesyoung-15/serverless-face-blurring}{ {Serverless Face Blurring}}}    \emph{}}{}
+      {\textbf{\href{https://github.com/jamesyoung-15/aws-serverless-face-blurring}{ {Serverless Face Blurring}}}    \emph{}}{}
       \resumeItemListStart
-        \resumeItem{\normalsize{A serverless application that blurs faces on an image using OpenFaaS and Python. Stores the transformed image in a MinIO storage bucket.}} 
-        \resumeItem{\normalsize{Application deployable on Kubernetes using MiniKube and Helm charts.}}
+        \resumeItem{\normalsize{An event-driven serverless application that allows users to upload images and blurs faces on the images.}} 
+        \resumeItem{\normalsize{Image processing uses Lambda and Rekognition, backend uses S3 and DynamoDB with SQS in-between to decouple the application.}}
+        \resumeItem{\normalsize{Used Terraform for deployment and implemented basic CI/CD pipeline using Github Actions.}}
       \resumeItemListEnd
 
     \resumeProjectHeading
         {\textbf{\href{https://github.com/jamesyoung-15/homeserver}{ {Home Server}}} \emph{}}{}
         \resumeItemListStart
-          \resumeItem{\normalsize{Built homelab running Proxmox for self-hosting services such as file and media server using Linux containers and VMs.}}
-          \resumeItem{\normalsize{Applied various tools such as Docker for containerization, Grafana for monitoring, Ansible for automation, etc.}}
+          \resumeItem{\normalsize{Built homelab running Proxmox using Linux containers and VMs for self-hosting services such as file/media servers, Github self-hosted runners, etc.}}
+          \resumeItem{\normalsize{Applied various tools such as Docker for containerization, Grafana for monitoring, Terraform and Ansible for deploying and provisioning resources, etc.}}
         \resumeItemListEnd
 
 
