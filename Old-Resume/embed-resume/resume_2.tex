@@ -1,0 +1,248 @@
+%-------------------------
+% Based off of: https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingNoSkill}[2]{
+    \item
+    % \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeCourseItem}[4]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.05in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge \scshape James Young} \\ \vspace{2pt}
+    \href{mailto:jyyoung@bu.edu}{\faEnvelope { jyyoung@bu.edu}} $|$ 
+    \href{https://github.com/jamesyoung-15} {\faGithub\ {jamesyoung-15}} $|$
+    \href{https://linkedin.com/in/jamesyyoung}{\faLinkedin { linkedin.com/in/jamesyyoung}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\vspace{-22pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The Hong Kong University of Science and Technology}{Hong Kong}
+      {BEng in Electronic Engineering - Minor in Information Technology}{Sept. 2020 -- June 2024}
+  \resumeSubHeadingListEnd
+  \vspace{-10pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Boston University}{United States}
+      {Masters in Computer Science (Part Time)}{Sept. 2024 -- June 2026}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, Javascript, C++} \\
+     \textbf{Tools/Platforms}{: Git, Docker, Linux, AWS (EC2, S3, Lambda)} \\
+     \textbf{Hardware}{: STM32, Raspberry PI, ESP32, Arduino} \\
+     \textbf{Protocols}{: UART, SPI, I2C} \\
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheadingNoSkill
+        {\href{https://github.com/jamesyoung-15/FallDetection}{{Software Developer Intern $|$ Intelligent Design Technology}}}{December 2023 -- Feburary 2024}
+        % {Python}{(Full Time)}
+        % \vspace{1pt}
+        \resumeItemListStart 
+          \resumeItem{\normalsize{Developed a prototype for real-time human fall detection for a Raspberry PI based robot.}}
+          \resumeItem{\normalsize{Fall detection uses Tensorflow and Movenet for pose estimation and heuristics for determining fall.}}
+          % \resumeItem{\normalsize{Created an Arduino library for communicating to multiple ESP32 with ESP-Now protocol.}}
+        \resumeItemListEnd
+
+    \resumeSubheadingNoSkill
+      {\href{https://github.com/jamesyoung-15/ESP32Cam-MeterReading}{{Electronic Engineering Intern $|$ Kolour Think Tank}}}{August 2023}
+      % {\href{https://github.com/jamesyoung-15/ESP32Cam-MeterReading}{{Electronic Engineering Intern $|$ Kolour Think Tank}\small{\faExternalLink*}}}{August 2023}
+      % {ESP32, AWS}{(Full Time)}
+      % \vspace{1pt}
+      \resumeItemListStart 
+        \resumeItem{\normalsize{Developed a digital utility meter reader that takes images of a utility meter with an ESP32-CAM, sends the image to AWS S3, reads the meter reading with AWS Rekognition, and stores the data in AWS DynamoDB.}}
+        % \resumeItem{\normalsize{Created an Arduino library for communicating to multiple ESP32 with ESP-Now protocol.}}
+      \resumeItemListEnd
+
+    \resumeSubheadingNoSkill
+      {\href{https://github.com/jamesyoung-15/Internship-GraphiteVentureLimited}{{IoT Intern $|$ Graphite Venture Limited}}}{December 2022 -- May 2023}
+      % {C++, ESP32, Arduino}{(Full and Part Time)}
+      % \vspace{1pt}
+      \resumeItemListStart 
+        \resumeItem{\normalsize{Developed Arduino libraries for reading water sensor data with ESP32 and sending sensor data to AWS IoT Core through MQTT with a SIM7600G module.}}
+        % \resumeItem{\normalsize{Created an Arduino library for communicating to multiple ESP32 with ESP-Now protocol.}}
+      \resumeItemListEnd
+
+
+    
+
+  \resumeSubHeadingListEnd
+
+%-----------Personal PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      
+    \resumeProjectHeading
+    {\textbf{\href{https://github.com/jamesyoung-15/Mini-Robot-Cleaner}{ {Mini Robot Cleaner} \small{\faExternalLink*}}}    \emph{}}{}
+    \resumeItemListStart
+      \resumeItem{\normalsize{Created a robot car with a STM32 board that can be wirelessly controlled through UDP or can roam autonomously}} 
+      \resumeItem{\normalsize{Integrated the bubble rebound algorithm for avoiding obstacles in free roam mode using 3 ultrasonic sensors}}
+      \resumeItem{\normalsize{Used Python for socket programming and PyQT5 to create GUI to control robot wirelessly}}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{\href{https://airqualitydashboard.jyydev.xyz/}{ {IoT Air Quality Monitoring} \small{\faExternalLink*}}}    \emph{}}{}
+    \resumeItemListStart
+      \resumeItem{\normalsize{An IoT air quality monitoring system that uses STM32 to measure data from SGP30 and AM2320 sensors and uses ESP32 to send and store data in AWS DynamoDB.}} 
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{\href{https://github.com/jamesyoung-15/serverless-face-blurring}{ {Serverless Face Blurring}}}    \emph{}}{}
+    \resumeItemListStart
+      \resumeItem{\normalsize{A serverless application that blurs faces on an image using OpenFaaS and Python. Stores the transformed image in a MinIO storage bucket.}} 
+      \resumeItem{\normalsize{Application deployable on Kubernetes using MiniKube and Helm charts.}}
+    \resumeItemListEnd
+
+
+
+      % \resumeProjectHeading
+      % {\textbf{\href{https://github.com/jamesyoung-15/Tic-Tac-Toe-Minimax}{ {Tic-Tac-Toe with Minimax} \faExternalLink*}} $|$ \emph{}}{}
+      % \resumeItemListStart
+      %   \resumeItem{\normalsize{A terminal tic-tac-toe game with option to either play against AI or another person.}}
+      %   \resumeItem{\normalsize{AI uses minimax algorithm to determine the best move each turn. Used tree data-structure for storing different board states in each turn.}}
+      % \resumeItemListEnd
+      
+
+
+
+    \resumeSubHeadingListEnd
+
+% ----- Coursework-----
+% \section{Relevant Coursework}
+%   \vspace{-14pt}
+%     \begin{multicols}{2}
+%         \begin{itemize}[itemsep=-1pt, parsep=3pt]
+%         \small
+%             % \item Intro. to Computer Science
+%             \item Object-Oriented Programming and Data Structures
+%             \item Cloud Computing and Big Data Systems
+%             \item Intro. to Computer Organization and Design
+%             \item Introduction to Embedded Systems
+%             \item Computer Communication Networks
+%             \item Machine Learning and Information Processing for Robotics
+%         \end{itemize}
+%     \end{multicols}
+
+
+
+
+
+%------Extra Curricular-------
+\section{Extracurricular Activities}
+    \begin{itemize}[itemsep=-2pt, parsep=5pt] 
+        \item  {HKUST Soccer Team \hfill Jan. 2021 - July 2024}
+    \end{itemize}
+
+
+
+\end{document}
