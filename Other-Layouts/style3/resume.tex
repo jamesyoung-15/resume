@@ -53,7 +53,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -75,11 +75,10 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubheadingNoSkill}[2]{
+\newcommand{\resumeSubSubheading}[2]{
     \item
-    % \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textit{\small #2} \\
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -106,11 +105,12 @@
 
 \begin{document}
 
+
 \begin{center}
-    \textbf{\Huge \scshape James Young} \\ \vspace{3pt}
-    % \small  \faPhone\ {+1 (857) 270-8026} $|$ 
+    \textbf{\Huge \scshape James Young} \\ \vspace{2pt}
+    \small  \faPhone\ {+1 (857) 270-8026} $|$ 
     \href{mailto:jyyoung@bu.edu}{\faEnvelope { jyyoung@bu.edu}} $|$ 
-    \href{https://github.com/jamesyoung-15} {\faGithub\ {jamesyoung-15}} $|$
+    \href{https://github.com/jamesyoung-15} {\faGithub\ {github.com/jamesyoung-15}} $|$
     \href{https://linkedin.com/in/jamesyyoung}{\faLinkedin { linkedin.com/in/jamesyyoung}}
 \end{center}
 
@@ -120,35 +120,30 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {The Hong Kong University of Science and Technology}{Hong Kong}
-      {BEng in Electronic Engineering - Minor in Information Technology}{Sept. 2020 -- June 2024}
-  \resumeSubHeadingListEnd
-  \vspace{-3pt}
-  \resumeSubHeadingListStart
+      {BEng in Electronic Engineering - Minor in Information Technology}{Sept. 2020 -- May 2024}
+      \resumeItemListStart
+      \resumeItem{GPA: 3.1}
+      % \resumeItem{\textbf{Relevant Coursework:} Programming with C++, Object-Oriented Programming and Data Structures, 
+      % Intro. to Computer Organization and Design, Computer Communication Networks, Intro. to Embedded Systems,
+      % Deep Learning in Computer Vision, Machine Learning and Information Processing for Robotics}
+    \resumeItemListEnd
     \resumeSubheading
       {Boston University}{United States}
-      {Master in Computer Science}{Sept. 2024 -- Present}
+      {MS in Computer Science}{Sept. 2024 -- Present}
+      \resumeItemListStart
+      \resumeItem{GPA: 3.85}
+    \resumeItemListEnd
   \resumeSubHeadingListEnd
-% \vspace{-10pt}
 
-%-----------Certs-----------
-\section{Certifications}
-\vspace{-15pt} % if using multicols
-  \begin{multicols}{2}
-      \begin{itemize}[itemsep=-1pt, parsep=3pt, leftmargin=0.22in]
-      \small
-          \item AWS Certified Solutions Architect (SAA-C03)
-          \item Red Hat Certified System Administrator (RHCSA)
-          \item HashiCorp Certified Terraform Associate (003)
-      \end{itemize}
-  \end{multicols}
+
 
 %-----------SKILLS-----------
-% \vspace{-25pt}
+\vspace{-20pt}
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Programming Languages}{: Python, Javascript, Bash} \\
-     %  \textbf{Libraries/Frameworks}{: ReactJS, NodeJS} \\
+      \textbf{Libraries/Frameworks}{: ReactJS, NextJS} \\
      \textbf{Tools/Platforms}{: AWS, Linux, Git, Github Actions, Terraform, Docker} \\ 
      \textbf{Others}{: Networking Concepts (VLANs, VPN, DNS, etc.)} \\
     }}
@@ -171,7 +166,7 @@
         {Electronic Engineering Intern}{July 2023 -- August 2023}
         \vspace{1pt}
         \resumeItemListStart 
-          \resumeItem{\normalsize{Developed a low-cost IoT serverless digital utility meter reader using ESP32-Cam and AWS services.}}
+          \resumeItem{\normalsize{Created a low-cost IoT serverless digital utility meter reader using ESP32-Cam and AWS services.}}
           \resumeItem{\normalsize{Utilized S3 for storing images of utility meter, Lambda and Rekognition to extract image data, and DynamoDB for data storage.}}
         \resumeItemListEnd
 
@@ -180,8 +175,9 @@
       {IoT Intern}{December 2022 -- May 2023}
       % \vspace{1pt}
       \resumeItemListStart 
-        \resumeItem{\normalsize{Created Arduino libraries in C++ for reading water sensor data with ESP32 and sending sensor data to AWS IoT Core with MQTT.}}
-        \resumeItem{\normalsize{Achieved 40\% decrease in power consumption by implementing light sleep intervals in ESP32 and switching from HTTP to MQTT protocol.}}
+        \resumeItem{\normalsize{Programmed Arduino libraries in C++ for reading water sensor data with ESP32 and sending sensor data to AWS IoT Core with MQTT.}}
+        \resumeItem{\normalsize{Improved power consumption by 40\%  by implementing light sleep intervals in ESP32 and switching from HTTP to MQTT protocol.}}
+        \resumeItem{\normalsize{Developed device-to-device communication using ESP-Now for triggering nearby water pumps, increasing communication range by .}}
       \resumeItemListEnd
 
 
@@ -195,8 +191,8 @@
     \resumeProjectHeading
         {\textbf{\href{https://github.com/jamesyoung-15/aws-serverless-face-blurring}{ {Serverless Face Blurring}}}    \emph{}}{}
         \resumeItemListStart
-          \resumeItem{\normalsize{An event-driven serverless application that allows users to upload images and blurs faces on the images. Front-end uses ReactJS and middleware uses Lambda functions in Python.}} 
-          \resumeItem{\normalsize{Image processing uses Lambda and Rekognition, backend uses S3 and DynamoDB with SQS in-between to decouple the application.}}
+          \resumeItem{\normalsize{An event-driven serverless application that allows users to upload images and automatically detects and blurs any faces on the image.}} 
+          \resumeItem{\normalsize{Front-end uses ReactJS, middle-ware uses Lambda and Rekognition, backend uses S3 and DynamoDB with SQS in-between to decouple the application.}}
           \resumeItem{\normalsize{Implemented CI/CD pipeline using Github Actions and Terraform for automated deployment.}}
         \resumeItemListEnd
 
@@ -206,6 +202,7 @@
           \resumeItem{\normalsize{Built homelab running Proxmox using Linux containers and VMs for self-hosting services such as file and media servers, Github self-hosted runners, etc.}}
           \resumeItem{\normalsize{Applied tools such as Grafana for monitoring, Terraform and Ansible for deploying and provisioning resources, etc.}}
         \resumeItemListEnd
+      
 
     \resumeSubHeadingListEnd
 

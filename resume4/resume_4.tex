@@ -136,10 +136,10 @@
     \begin{multicols}{2}
         \begin{itemize}[itemsep=-1pt, parsep=3pt, leftmargin=0.21in]
         \small
-            % \item CompTIA A+ Certification
-            \item Red Hat Certified System Administrator (RHCSA)
+            \item CompTIA A+ Certification
             % \item Certified Kubernetes Administrator (CKA)
             \item AWS Certified Solutions Architect (SAA-C03)
+            \item Red Hat Certified System Administrator (RHCSA)
             \item HashiCorp Certified Terraform Associate (003)
             % \item Red Hat Certified Engineer (RHCE)
         \end{itemize}
@@ -150,9 +150,9 @@
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming Languages}{: Python, Javascript, Bash} \\
-     \textbf{Tools/Platforms}{: AWS, Linux (Red-Hat \& Debian-based Distros), Terraform} \\ 
-    %  \textbf{Cloud}{: AWS (Lambda, EC2, S3, DynamoDB)} \\
+     \textbf{Programming Languages}{: Python, Bash} \\
+     \textbf{Tools}{: AWS, Terraform, Docker, Ansible, Git, Github Actions} \\
+     \textbf{Platforms}{: Linux, Windows 10, Windows Server, Windows AD, MacOS, Proxmox, VMWare} \\ 
      \textbf{Others}{: Networking Concepts (VLANs, VPN, DNS)}, PC Hardware \\
     }}
  \end{itemize}
@@ -166,8 +166,8 @@
         % {Python}{(Full Time)}
         % \vspace{1pt}
         \resumeItemListStart 
-          \resumeItem{\normalsize{Developed a prototype for real-time human fall detection for a Raspberry PI based robot.}}
-          \resumeItem{\normalsize{Fall detection uses Tensorflow and Movenet for pose estimation and heuristics for determining fall.}}
+          \resumeItem{\normalsize{Developed a prototype for real-time human fall detection for a Raspberry PI based robot using only camera inputs in Python.}}
+          \resumeItem{\normalsize{Utilized Tensorflow's Movenet for pose estimation combined with heuristics for determining fall.}}
         \resumeItemListEnd
 
     % \resumeSubheadingNoSkill
@@ -185,8 +185,8 @@
       % {C++, ESP32, Arduino}{(Full and Part Time)}
       % \vspace{1pt}
       \resumeItemListStart 
-        \resumeItem{\normalsize{Developed Arduino libraries for reading water sensor data with ESP32 and sending sensor data to AWS IoT Core through MQTT.}}
-        % \resumeItem{\normalsize{Created an Arduino library for communicating to multiple ESP32 with ESP-Now protocol.}}
+        \resumeItem{\normalsize{Developed C++ Arduino libraries for reading water sensor data with ESP32 and sending sensor data to AWS IoT Core through MQTT.}}
+        \resumeItem{\normalsize{Achieved 40\% decrease in power consumption by implementing light sleep intervals in ESP32.}}
       \resumeItemListEnd
 
 
@@ -200,25 +200,27 @@
     \resumeProjectHeading
         {\textbf{\href{https://github.com/jamesyoung-15/homeserver}{ {Home Server}}} \emph{}}{}
         \resumeItemListStart
-          \resumeItem{\normalsize{Built homelab running Proxmox for self-hosting services such as file and media server using Linux containers and VMs.}}
-          \resumeItem{\normalsize{Applied various tools such as Docker for containerization, Grafana for monitoring, Ansible for automation, etc.}}
+          \resumeItem{\normalsize{Built homelab running Proxmox using Linux containers and VMs for self-hosting services such as file and media servers, Github self-hosted runners, etc.}}
+          \resumeItem{\normalsize{Applied tools such as Grafana for monitoring, Terraform and Ansible for deploying and provisioning resources, etc.}}
         \resumeItemListEnd
 
-      \resumeProjectHeading
-      {\textbf{\href{https://github.com/jamesyoung-15/serverless-face-blurring}{ {Serverless Face Blurring}}}    \emph{}}{}
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/jamesyoung-15/aws-serverless-face-blurring}{ {Serverless Face Blurring}}}    \emph{}}{}
       \resumeItemListStart
-        \resumeItem{\normalsize{A serverless application that blurs faces on an image using OpenFaaS and Python. Stores the transformed image in a MinIO storage bucket.}} 
-        \resumeItem{\normalsize{Application deployable on Kubernetes using MiniKube and Helm charts.}}
+        \resumeItem{\normalsize{An event-driven serverless application that allows users to upload images and blurs faces on the images.}} 
+        \resumeItem{\normalsize{Image processing uses Lambda and Rekognition, backend uses S3 and DynamoDB with SQS in-between to decouple the application.}}
+        \resumeItem{\normalsize{Used Terraform for deployment and implemented basic CI/CD pipeline using Github Actions.}}
       \resumeItemListEnd
 
 
 
-      \resumeProjectHeading
-      {\textbf{\href{https://airqualitydashboard.jyylab.com/}{ {Air Quality Monitoring Dashboard}}}    \emph{}}{}
-      \resumeItemListStart
-        \resumeItem{\normalsize{A fullstack project that stores and displays my home's air quality sensor data using AWS services.}} 
-        \resumeItem{\normalsize{Data is stored and retrieved on DynamoDB using REST API with API Gateway and Lambda. Application deployed on an EC2 instance.}}
-      \resumeItemListEnd
+
+      % \resumeProjectHeading
+      % {\textbf{\href{https://airqualitydashboard.jyylab.com/}{ {Air Quality Monitoring Dashboard}}}    \emph{}}{}
+      % \resumeItemListStart
+      %   \resumeItem{\normalsize{A fullstack project that stores and displays my home's air quality sensor data using AWS services.}} 
+      %   \resumeItem{\normalsize{Data is stored and retrieved on DynamoDB using REST API with API Gateway and Lambda. Application deployed on an EC2 instance.}}
+      % \resumeItemListEnd
 
 
 
