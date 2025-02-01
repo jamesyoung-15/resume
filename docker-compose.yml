@@ -2,11 +2,7 @@ services:
   nginx:
     image: nginx
     volumes:
-      - ./resume1:/usr/share/nginx/html/resume1
-      - ./resume2:/usr/share/nginx/html/resume2
-      - ./resume3:/usr/share/nginx/html/resume3
-      - ./resume4:/usr/share/nginx/html/resume4
-      - ./resume5:/usr/share/nginx/html/resume5
+      - ./resume-main:/usr/share/nginx/html/resume
     ports:
       - "1499:80"
     restart: always
