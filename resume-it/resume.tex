@@ -126,10 +126,10 @@
 \begin{center}
     \textbf{\Huge \scshape James Young} \\ \vspace{1pt}
     \small 
-    \href{mailto:jamesyoung3931@gmail.com}{\faEnvelope { jamesyoung3931@gmail.com}} $|$
-    \href{https://linkedin.com/in/jamesyyoung}{\faLinkedin { linkedin.com/in/jamesyyoung}} $|$
+    \href{mailto:jamesyoung3931@gmail.com}{\faEnvelope { jamesyoung3931@gmail.com}} $|$ 
     \href{https://github.com/jamesyoung-15} {\faGithub\ {github.com/jamesyoung-15}} $|$
-    \href{https://jyyoung.com}{\faGlobe { jyyoung.com}}
+    \href{https://jyyoung.com}{\faGlobe { jyyoung.com}} % $|$
+    % \href{https://linkedin.com/in/jamesyyoung}{\faLinkedin { linkedin.com/in/jamesyyoung}}
 \end{center}
 
 
@@ -148,23 +148,46 @@
         {Bachelor of Science in Electronic Engineering, Minor in Information Technology}{September 2020 -- June 2024}
         \resumeItemListStart
             \resumeItem{\textbf{GPA:} 3.13}
-            \resumeItem{\textbf{Relevant Coursework:} Cloud Computing and Big Data Systems, Deep Learning in Computer Vision, Object-Oriented Programming and Data Structures, Computer Communication Networks}
+            \resumeItem{\textbf{Relevant Coursework:} Computer Communication Networks, Cloud Computing and Big Data Systems, Deep Learning in Computer Vision, Object-Oriented Programming and Data Structures, Intro to Embedded Systems}
         \resumeItemListEnd
   \resumeSubHeadingListEnd
+
+% -----------Certifications-----------
+\section{Certifications}
+    \vspace{-15pt} % if using multicols
+    \vspace{1pt}
+    \begin{multicols}{2}
+        \begin{itemize}[itemsep=-1pt, parsep=3pt, leftmargin=0.22in]
+        \small
+            \item AWS Certified Solutions Architect (SAA-C03)
+            \item Red Hat Certified System Administrator (RHCSA)
+            \item HashiCorp Certified Terraform Associate (003)
+            \item CompTia A+ Certification
+        \end{itemize}
+    \end{multicols}
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Skills}
  \begin{itemize}[leftmargin=0.08in, label={}]
     \small{\item{
-     \textbf{Technologies}{: Python, Javascript, SQL (MySQL), HTML/CSS} \\
-     \textbf{Libraries/Frameworks}{: React, Numpy, Pandas, Pytorch, Matplotlib } \\
-     \textbf{Platform/Tools}{: Git, Github Action, AWS, Terraform, Linux, Docker} \\
+     \textbf{Technologies}{: Python, Javascript, SQL (MySQL)} \\
+     \textbf{Platform/Tools}{: Git, Github Action, AWS, Terraform, Linux (RHEL, Ubuntu, Debian), Docker} \\
+     \textbf{Others}{: Networking Concepts (TCP/IP, VLANs, etc.)}\\
     }}
  \end{itemize}
 
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
+        % Project 2
+        \resumeSubheading
+          {\textbf{\href{https://github.com/jamesyoung-15/homelab}{Homelab}}}{\emph{\href{https://jyyhomelab.com}{jyyhomelab.com}}}
+          {Linux, Docker, Ansible, Terraform}{}
+          \resumeItemListStart
+          \resumeItem{Built and managed a setup of servers and network equipment for experimenting, learning, and self-hosting services}
+          \resumeItem{Utilized Proxmox for virtualization and OPNsense firewall for advanced network configurations (e.g., VLANs)}
+          \resumeItem{Automated resource provisioning using Terraform and implemented system monitoring with Grafana}
+        \resumeItemListEnd
         % Project 1
         \resumeSubheading
             {\textbf{\href{https://faceblur.jyylab.com}{Serverless Face Blurrer}}}{\emph{\href{https://faceblur.jyylab.com}{faceblur.jyylab.com}}}
@@ -174,15 +197,6 @@
                 \resumeItem{Frontend built with React and backend built with Python using AWS Lambda and Rekognition}
                 \resumeItem{Deployed the application using Terraform with CI/CD implemented with Github Actions}
                 \resumeItem{Improved system reliability by adding SQS to handle image processing jobs}
-            \resumeItemListEnd
-        % Project 2
-        \resumeSubheading
-            {\textbf{\href{https://github.com/jamesyoung-15/homelab}{Homelab}}}{\emph{\href{https://jyyhomelab.com}{jyyhomelab.com}}}
-            {Linux, Docker, Ansible, Terraform}{}
-            \resumeItemListStart
-            \resumeItem{Built and managed a setup of servers and network equipment for experimenting, learning, and self-hosting services}
-            \resumeItem{Utilized Proxmox for virtualization and OPNsense firewall for advanced network configurations (e.g., VLANs)}
-            \resumeItem{Automated resource provisioning using Terraform and implemented system monitoring with Grafana}
             \resumeItemListEnd
         % Project 3
         % \resumeSubheading
@@ -196,26 +210,40 @@
     \resumeSubHeadingListEnd
 
 % -----------Certifications-----------
-\section{Certifications}
-    \vspace{-15pt} % if using multicols
-    \vspace{1pt}
-    \begin{multicols}{1}
-        \begin{itemize}[itemsep=-1pt, parsep=3pt, leftmargin=0.22in]
-        \small
-            \item AWS Certified Solutions Architect (SAA-C03)
-            \item Red Hat Certified System Administrator (RHCSA)
-            \item HashiCorp Certified Terraform Associate (003)
-            \item CompTia A+ Certification
-        \end{itemize}
-    \end{multicols}
-    % \begin{itemize}[itemsep=-1pt, parsep=3pt, leftmargin=0.22in]
-    %     \small{
-    %         \item AWS Certified Solutions Architect (SAA-C03)
-    %         \item Red Hat Certified System Administrator (RHCSA)
-    %         \item HashiCorp Certified Terraform Associate (003)
-    %         % \item CompTia A+ Certification
-    %     }
-    % \end{itemize}
+% \section{Certifications}
+%     % \vspace{-15pt} % if using multicols
+%     \vspace{1pt}
+%     % \begin{multicols}{1}
+%     %     \begin{itemize}[itemsep=-1pt, parsep=3pt, leftmargin=0.22in]
+%     %     \small
+%     %         \item AWS Certified Solutions Architect (SAA-C03)
+%     %         \item Red Hat Certified System Administrator (RHCSA)
+%     %         \item HashiCorp Certified Terraform Associate (003)
+%     %         % \item CompTia A+ Certification
+%     %     \end{itemize}
+%     % \end{multicols}
+%     \begin{itemize}[itemsep=-1pt, parsep=3pt, leftmargin=0.22in]
+%         \small{
+%             \item AWS Certified Solutions Architect (SAA-C03)
+%             \item Red Hat Certified System Administrator (RHCSA)
+%             \item HashiCorp Certified Terraform Associate (003)
+%             % \item CompTia A+ Certification
+%         }
+%     \end{itemize}
+
+% -----------Extracurriculars-----------
+\section{Extracurriculars}
+  \resumeSubHeadingListStart
+    \vspace{-2pt}
+    \resumeProjectHeading
+      {\textbf{NCAE Cyber Games}}{Janurary 2025 -- March 2025}
+      \resumeItemListStart
+        \resumeItem{Joined the NCAE cyber security competition to compete against other students in capture the flag competitions
+        }
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -248,20 +276,6 @@
     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
-% -----------Extracurriculars-----------
-\section{Extracurriculars}
-  \resumeSubHeadingListStart
-    \vspace{-2pt}
-    \resumeProjectHeading
-      {\textbf{NCAE Cyber Games}}{Janurary 2025 -- March 2025}
-      \resumeItemListStart
-        \resumeItem{Joined the NCAE cyber security competition to compete against other students in capture the flag competitions
-        }
-      \resumeItemListEnd
-      
-  \resumeSubHeadingListEnd
-
 
 %-------------------------------------------
 \end{document}
