@@ -127,7 +127,7 @@
     \textbf{\Huge \scshape James Young} \\ \vspace{1pt}
     \small 
     \href{mailto:jamesyoung3931@gmail.com}{\faEnvelope { jamesyoung3931@gmail.com}} $|$
-    \href{https://linkedin.com/in/jamesyyoung}{\faLinkedin { linkedin.com/in/jamesyyoung}} $|$
+    % \href{https://linkedin.com/in/jamesyyoung}{\faLinkedin { linkedin.com/in/jamesyyoung}} $|$
     \href{https://github.com/jamesyoung-15} {\faGithub\ {github.com/jamesyoung-15}} $|$
     \href{https://jyyoung.com}{\faGlobe { jyyoung.com}}
 \end{center}
@@ -140,7 +140,7 @@
         {Boston University}{MA, United States}
         {Master of Science in Computer Science}{September 2024 -- Present}
         \resumeItemListStart
-            % \resumeItem{\textbf{GPA:} 3.7}
+            % \resumeItem{\textbf{GPA:} 4.0}
             \resumeItem{\textbf{Relevant Coursework:} Analysis of Algorithms, Database Management, Operating Systems}
         \resumeItemListEnd
     \resumeSubheading
@@ -156,9 +156,9 @@
 \section{Skills}
  \begin{itemize}[leftmargin=0.08in, label={}]
     \small{\item{
-     \textbf{Technologies}{: Python, Javascript, SQL, HTML/CSS} \\
-     \textbf{Libraries/Frameworks}{: React, Numpy, Pandas, Pytorch, Matplotlib, Scikit-Learn } \\
-     \textbf{Platform/Tools}{: Git, AWS, Terraform, Linux, Docker} \\
+     \textbf{Technologies}{: Python, Javascript, SQL (Postgres)} \\
+    %  \textbf{Libraries/Frameworks}{: React, Numpy, Pandas, Pytorch, Matplotlib } \\
+     \textbf{Platform/Tools}{: Git, Github Actions, AWS, Terraform, Linux, Docker} \\
     }}
  \end{itemize}
 
@@ -167,35 +167,32 @@
     \resumeSubHeadingListStart
         % Project 1
         \resumeSubheading
-          {\textbf{{Bluebikes Availablility Predictor}}}{\emph{\href{https://bluebikespredictor.jyylab.com}{bluebikespredictor.jyylab.com}}}
-          {Python, Pandas, Scikit-Learn, React, Docker, Terraform}{}
-          \resumeItemListStart
-            \resumeItem{Built a machine learning application to forecast real-time Bluebikes availability for three stations near my home.}
-            \resumeItem{Leveraged historical Bluebikes ridership data alongside temperature and precipitation data for training with Gradient Boosting Regressor model to predict bike demand.}
-            % \resumeItem{Integrated data pipeline with Lambda, S3, Glue, and EventBridge to pull Bluebike and weather data, store and transform the data into S3, and update the model monthly.}
-            % \resumeItem{Created a PowerBI dashboard to visualize the predictions and historical data.}
-            \resumeItem{Used Flask to deploy prediction model for backend, front-end uses React to display availability forecasts, deployed application with Docker on EC2 with Terraform.}
-          \resumeItemListEnd
-        % Project 2
-        \resumeSubheading
             {\textbf{\href{https://faceblur.jyylab.com}{Serverless Face Blurrer}}}{\emph{\href{https://faceblur.jyylab.com}{faceblur.jyylab.com}}}
             {React, Python, Lambda, DynamoDB, S3, Rekognition, Terraform}{}
             \resumeItemListStart
-              \resumeItem{Developed a full-stack application that automatically blurs faces in images uploaded by users.}
-              \resumeItem{Frontend built with React, middleware uses Lambda, Rekognition, SQS for event-driven architecture, backend uses S3 bucket with job queues stored in DynamoDB.}
-              % \resumeItem{Frontend built with React and backend built with Python using AWS Lambda and Rekognition}
-              % \resumeItem{Improved system reliability by adding SQS to handle image processing jobs}
-              \resumeItem{Deployed the application using Terraform with CI/CD implemented with Github Actions.}
+                \resumeItem{Developed a full-stack application that automatically blurs faces in images uploaded to an S3 bucket with job queues stored in DynamoDB}
+                \resumeItem{Frontend built with React and backend built with Python using AWS Lambda and Rekognition}
+                \resumeItem{Deployed the application using Terraform with CI/CD implemented with Github Actions}
+                \resumeItem{Improved system reliability by adding SQS to handle image processing jobs}
             \resumeItemListEnd
-        % % Project 2
+        % Project 2
         % \resumeSubheading
-        %     {\textbf{\href{https://github.com/jamesyoung-15/homelab}{Homelab}}}{\emph{\href{https://jyyhomelab.com}{jyyhomelab.com}}}
-        %     {Linux, Docker, Ansible, Terraform}{}
+        %     {\textbf{\href{https://github.com/jamesyoung-15/mini-robot-cleaner}{STM32 Robot Cleaner}}}{\emph{\href{https://youtube.com/watch?v=z4BqyFa29B0}{youtube.com/watch?v=z4BqyFa29B0}}}
+        %     {C, Python, STM32}{}
         %     \resumeItemListStart
-        %     \resumeItem{Built and managed a setup of servers and network equipment for experimenting, learning, and self-hosting services}
-        %     \resumeItem{Utilized Proxmox for virtualization and OPNsense firewall for advanced network configurations (e.g., VLANs)}
-        %     \resumeItem{Automated resource provisioning using Terraform and implemented system monitoring with Grafana}
+        %     \resumeItem{Created a robot car with a STM32 board that can be wirelessly controlled through ESP01 chip with UDP and can also roam autonomously whilst avoiding obstacles}
+        %     \resumeItem{Integrated the bubble rebound algorithm for avoiding obstacles in autonomous free roam mode using 3 ultrasonic sensors}
+        %     \resumeItem{Developed robot GUI control with UDP using Python socket library and PyQT5 to for GUI}
         %     \resumeItemListEnd
+        % Project 3
+        \resumeSubheading
+            {\textbf{\href{https://github.com/jamesyoung-15/homelab}{Homelab}}}{\emph{\href{https://jyyhomelab.com}{jyyhomelab.com}}}
+            {Linux, Docker, Terraform}{}
+            \resumeItemListStart
+            \resumeItem{Built and managed a setup of servers and network equipment for experimenting, learning, and self-hosting services}
+            \resumeItem{Utilized Proxmox for virtualization and OPNsense firewall for advanced network configurations (e.g., VLANs)}
+            \resumeItem{Automated resource provisioning using Terraform and implemented system monitoring with Grafana and InfluxDB}
+            \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 % -----------Certifications-----------
@@ -257,7 +254,7 @@
   \resumeSubHeadingListStart
     \vspace{-2pt}
     \resumeProjectHeading
-      {\textbf{NCAE Cyber Games}}{Feburary 2025 -- April 2025}
+      {\textbf{NCAE Cyber Games}}{Feburary 2025 -- Present}
       \resumeItemListStart
         \resumeItem{Joined NCAE Cyber Games, a cybersecurity and CTF competition where our team competed against other universities and finished 1st in the regionals.}
       \resumeItemListEnd
