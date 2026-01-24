@@ -128,118 +128,57 @@
     \small 
     \href{mailto:jamesyoung3931@gmail.com}{\faEnvelope { jamesyoung3931@gmail.com}} $|$ 
     \href{https://github.com/jamesyoung-15} {\faGithub\ {github.com/jamesyoung-15}} $|$
-    \href{https://jyyoung.com}{\faGlobe { jyyoung.com}} % $|$
-    % \href{https://linkedin.com/in/jamesyyoung}{\faLinkedin { linkedin.com/in/jamesyyoung}}
+    \href{https://linkedin.com/in/jamesyyoung}{\faLinkedin { linkedin.com/in/jamesyyoung}} $|$
+    \href{https://jyyoung.com}{\faGlobe { jyyoung.com}}
 \end{center}
 
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-        {Boston University}{MA, United States}
-        {Master of Science in Computer Science}{September 2024 -- Present}
-        % \resumeItemListStart
-            % \resumeItem{GPA: 4.0}
-            % \resumeItem{Relevant Coursework: Analysis of Algorithms, Database Management, Operating Systems}
-        % \resumeItemListEnd
-    \resumeSubheading
-        {Hong Kong University of Science and Technology}{Hong Kong}
-        {Bachelor of Science in Electronic Engineering, Minor in Information Technology}{September 2020 -- June 2024}
-        % \resumeItemListStart
-            % \resumeItem{GPA: 3.13}
-            % \resumeItem{Relevant Coursework: Cloud Computing and Big Data Systems, Deep Learning in Computer Vision}
-        % \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------PROGRAMMING SKILLS-----------
-\section{Skills}
- \begin{itemize}[leftmargin=0.08in, label={}]
-    \small{\item{
-     \textbf{Technologies}{: Python, Typescript, SQL (Postgres), MongoDB, HTML/CSS} \\
-     \textbf{Libraries/Frameworks}{: React, FastAPI, Flask } \\
-     \textbf{Platform/Tools}{: Git, AWS, Terraform, Linux, Docker} \\
-    }}
- \end{itemize}
-
+%-----------Summary-----------
+% \section{Summary}
+% \begin{itemize}[leftmargin=0.22in]
+%     \item \small{Infrastructure Engineer with hands-on experience in Linux systems, automation, and cloud infrastructure. Strong background in configuration management, infrastructure as code, and platform services.}
+% \end{itemize}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
   \resumeSubheading
+    {Infrastructure Engineer}{January 2026 -- Present}
+    {American Family Insurance}{United States}
+    \resumeItemListStart
+      \resumeItem{Developed and maintained Ansible playbooks for automated server provisioning and configuration management across multiple environments, reducing setup time by over 30\%}
+      \resumeItem{Assisted with Linux and Windows server builds, configuration management, and maintenance and troubleshooting tasks}
+    \resumeItemListEnd
+
+  \resumeSubheading
     {Software Engineering Intern}{June 2025 -- December 2025}
     {Granite Telecommunications}{United States}
     \resumeItemListStart
-      \resumeItem{Contributed automation scripts for Linux edge device system and network health monitoring, enabling automatic validation when new images are flashed to reduce manual testing overhead}
-      \resumeItem{Worked on extracting and analyzing NOC ConnectWise ticket data, implementing text embedding and clustering techniques to identify patterns in customer support interactions}
-      \resumeItem{Assisted in developing React and FastAPI internal chat application to interface with company's RAG-based LLM system trained on internal documents}
+      \resumeItem{Built testing infrastructure that automates flashing images to Linux edge devices, orchestrate health checks, and run verification scripts to streamline device QA}
+      \resumeItem{Added FastAPI endpoints for developers to access devices, run tests, and retrieve results remotely}
+      \resumeItem{Worked on building an automated invoice processing pipeline using OCR and Gemini to extract, classify, and structure data from unstructured invoices from multiple vendors}
     \resumeItemListEnd
 
     \resumeSubheading
       {Software Developer Intern}{December 2023 -- February 2024}
       {Intelligent Design Technology Limited}{Hong Kong}
       \resumeItemListStart
-        \resumeItem{Developed a prototype for real-time human fall detection for a Raspberry PI based robot in Python}
-        \resumeItem{Utilized OpenCV for video capture and Tensorflow with Movenet for pose estimation combined with heuristics for classifying fall}
+        \resumeItem{Developed a prototype for human fall detection for a Raspberry PI based robot in Python using OpenCV and TensorFlow}
       \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-    % \resumeSubheading
-    %   {IoT Intern}{December 2022 -- May 2023}
-    %   {Spotless Tech Limited}{Hong Kong}
-    %   \resumeItemListStart
-    %     \resumeItem{Implemented C++ libraries for reading water sensors with ESP32 and sending sensor data to AWS with MQTT, achieved ESP32 20\% power consumption reduction by implementing light sleep intervals.}
-    %     \resumeItem{Worked on implementing peer-to-peer communication for activating nearby water pumps with multiple ESP32 devices. Increased communication range and speed by more than 10\% by switching from BLE to ESP-Now.}
-    % \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-        % Project 1
-        \resumeSubheading
-        {\textbf{{Bluebike Availability Predictor}}}{\emph{\href{https://bluebikespredictor.jyylab.com}{bluebikespredictor.jyylab.com}}}
-        {Python, Flask, EC2, Terraform}{}
-        \resumeItemListStart
-          \resumeItem{Developed an application that makes real-time future predictions on the number of available Bluebikes at 3 bike stations near my home using machine learning.}
-          \resumeItem{Employed Random Forest for prediction model trained with monthly Bluebike historical ridership data alongside temperature and precipitation data.}
-          % \resumeItem{Integrated data pipeline with Lambda, S3, Athena, and EventBridge to pull Bluebike and weather data, store data in S3, and update the model monthly.}
-          % \resumeItem{Created a PowerBI dashboard to visualize the predictions and historical data.}
-          \resumeItem{Added web interface using Flask to display predictions and data visualizations, deployed with Docker on EC2 with Terraform.}
-        \resumeItemListEnd
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.08in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Bash, SQL} \\
+     \textbf{Tools}{: Git, Ansible, Terraform, Docker} \\
+     \textbf{Platforms}{: Linux (RHEL, Debian, Ubuntu), Windows Server (2019, 2022), Proxmox} \\
+     \textbf{Cloud}{: AWS (EC2, S3, IAM, VPC, Lambda)} \\
+    }}
+ \end{itemize}
 
-        % Project 2
-        \resumeSubheading
-            {\textbf{\href{https://faceblur.jyylab.com}{Serverless Face Blurrer}}}{\emph{\href{https://faceblur.jyylab.com}{faceblur.jyylab.com}}}
-            {React, Python, Lambda, DynamoDB, S3, Rekognition, Terraform}{}
-            \resumeItemListStart
-                \resumeItem{Developed a full-stack application that automatically blurs faces in images uploaded to an S3 bucket with job queues stored in DynamoDB}
-                \resumeItem{Frontend built with React and backend built with Python using AWS Lambda and Rekognition}
-                \resumeItem{Deployed the application using Terraform with CI/CD implemented with Github Actions}
-                \resumeItem{Improved system reliability by adding SQS to handle image processing jobs}
-            \resumeItemListEnd
-
-        % % Project 2
-        % \resumeSubheading
-        %     {\textbf{\href{https://github.com/jamesyoung-15/homelab}{Homelab}}}{\emph{\href{https://jyyhomelab.com}{jyyhomelab.com}}}
-        %     {Linux, Docker, Ansible, Terraform}{}
-        %     \resumeItemListStart
-        %     \resumeItem{Built and managed a setup of servers and network equipment for experimenting, learning, and self-hosting services}
-        %     \resumeItem{Utilized Proxmox for virtualization and OPNsense firewall for advanced network configurations (e.g., VLANs)}
-        %     \resumeItem{Automated resource provisioning using Terraform and implemented system monitoring with Grafana}
-        %     \resumeItemListEnd
-    \resumeSubHeadingListEnd
 
 % -----------Certifications-----------
 \section{Certifications}
@@ -251,7 +190,8 @@
             \item AWS Certified Solutions Architect (SAA-C03)
             \item Red Hat Certified System Administrator (RHCSA)
             \item HashiCorp Certified Terraform Associate (003)
-            % \item CompTia A+ Certification
+            % \item Red Hat Certified Engineer (RHCE)
+            % \item Certified Kubernetes Administrator (CKA)
         \end{itemize}
     \end{multicols}
     % \begin{itemize}[itemsep=-1pt, parsep=3pt, leftmargin=0.22in]
@@ -259,22 +199,46 @@
             % \item AWS Certified Solutions Architect (SAA-C03)
             % \item Red Hat Certified System Administrator (RHCSA)
             % \item HashiCorp Certified Terraform Associate (003)
-            % \item CompTia A+ Certification
+            % \item Red Hat Certified Engineer (RHCE)
+            % \item Certified Kubernetes Administrator (CKA)
         % }
     % \end{itemize}
 
-% -----------Extracurriculars-----------
-\section{Extracurriculars}
-  \resumeSubHeadingListStart
-    \vspace{-2pt}
-    \resumeProjectHeading
-      {\textbf{NCAE Cyber Games}}{February 2025 -- April 2025}
-      \resumeItemListStart
-        \resumeItem{Joined NCAE Cyber Games, a cybersecurity and CTF competition where our team competed against other universities and finished 1st in the regionals.}
-      \resumeItemListEnd
-      
-  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------
+\section{Personal Projects}
+    \resumeSubHeadingListStart
+        % Project 1
+        \resumeSubheading
+            {\textbf{\href{https://github.com/jamesyoung-15/homelab}{Homelab}}}{\emph{\href{https://jyyhomelab.com}{jyyhomelab.com}}}
+            {Linux, Docker, Ansible, Terraform}{}
+            \resumeItemListStart
+            \resumeItem{Built and managed a setup of servers and network equipment for experimenting and self-hosting services}
+            \resumeItem{Utilized Proxmox for virtualization, OPNsense for network management, and Terraform and Ansible for infrastructure as code and configuration management}
+            \resumeItemListEnd
+        
+        % Project 2
+        \resumeSubheading
+            {\textbf{\href{https://faceblur.jyylab.com}{Serverless Face Blurrer}}}{\emph{\href{https://faceblur.jyylab.com}{faceblur.jyylab.com}}}
+            {React, Python, Lambda, DynamoDB, S3, Rekognition, Terraform}{}
+            \resumeItemListStart
+                \resumeItem{Developed a full-stack application that automatically blurs faces in images uploaded to an S3 bucket with job queues stored in DynamoDB}
+                \resumeItem{Frontend built with React and backend built with Python using AWS Lambda and Rekognition, SQS for job queuing}
+                \resumeItem{Deployed the application using Terraform with CI/CD implemented with Github Actions}
+            \resumeItemListEnd
 
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Boston University}{United States}
+        {Master of Science in Computer Science}{September 2024 -- Present}
+        \vspace{3pt}
+    \resumeSubheading
+        {Hong Kong University of Science and Technology}{Hong Kong}
+        {Bachelor of Engineering in Electronic Engineering}{September 2020 -- June 2024}
+  \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
