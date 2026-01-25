@@ -1,10 +1,10 @@
 # Resume
 
-My resumes using LaTex. Use `pdftotex` to build.
+My resumes using LaTex, based on [Jake's resume](https://github.com/jakegut/resume/). Using `pdflatex` to build.
 
 ## Versions
 
-- resume-dev: general software dev
-- resume-cloud: tuned more for cloud/devops
-- resume-data: tuned more for data science and ML
-- resume-it: tuned for IT roles
+- resume-main: base resume
+- resume-swe: tuned more for software roles
+- resume-devops: tuned more for cloud/devops roles
+- resume-it: tuned for IT/sysadmin roles

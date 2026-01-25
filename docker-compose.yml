@@ -1,8 +1,0 @@
-services:
-  nginx:
-    image: nginx
-    volumes:
-      - ./resume-main:/usr/share/nginx/html/resume
-    ports:
-      - "1499:80"
-    restart: always

@@ -46,3 +46,6 @@ terraform.rc
 
 # node_modules
 node_modules
+
+# Own ignore files
+resume-temp*
