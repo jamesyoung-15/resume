@@ -49,3 +49,5 @@ node_modules
 
 # Own ignore files
 resume-temp*
+PLAN.md
+MEMORY.md
