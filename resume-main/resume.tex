@@ -71,8 +71,9 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-5pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{5pt}
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -80,41 +81,39 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+  \item\small{#1}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \item
+    \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeBullet}{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.08in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.08in, label={}, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=5pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.22in]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.22in, label=\resumeBullet, topsep=2pt, partopsep=0pt, parsep=0pt, itemsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -128,8 +127,7 @@
     \small 
     \href{mailto:jamesyoung3931@gmail.com}{\faEnvelope { jamesyoung3931@gmail.com}} $|$ 
     \href{https://github.com/jamesyoung-15} {\faGithub\ {github.com/jamesyoung-15}} $|$
-    \href{https://linkedin.com/in/jamesyyoung}{\faLinkedin { linkedin.com/in/jamesyyoung}} $|$
-    \href{https://jyyoung.com}{\faGlobe { jyyoung.com}}
+    \href{https://linkedin.com/in/jamesyyoung}{\faLinkedin { linkedin.com/in/jamesyyoung}}
 \end{center}
 
 %-----------Summary-----------
@@ -143,11 +141,12 @@
   \resumeSubHeadingListStart
 
   \resumeSubheading
-    {Infrastructure Engineer}{January 2026 -- Present}
+    {Platform Engineer}{January 2026 -- Present}
     {American Family Insurance}{United States}
     \resumeItemListStart
-      \resumeItem{Developed and maintained Ansible playbooks for automated server provisioning and configuration management across multiple environments}
-      \resumeItem{Assisted with Linux and Windows server builds, configuration management, and maintenance and troubleshooting tasks}
+      \resumeItem{Developed Ansible and Python automations in Ansible Automation Platform (AAP) to provision multi-node database clusters on VMware vSphere, including SQL Server Always On and Oracle RAC, cutting build time by about 50\%}
+      \resumeItem{Replaced manual cluster setup steps, such as Infoblox IP reservations, Active Directory objects, and shared VMware disks between nodes, with end-to-end automated workflows}
+      \resumeItem{Automated agent updates (e.g. Qualys, Cribl) across hundreds of Windows Server and RHEL servers spanning multiple Active Directory domains}
     \resumeItemListEnd
 
   \resumeSubheading
@@ -170,30 +169,24 @@
 
 %-----------SKILLS-----------
 \section{Skills}
- \begin{itemize}[leftmargin=0.08in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, Bash, SQL} \\
-     \textbf{Tools}{: Git, Ansible, Terraform, Docker} \\
-     \textbf{Platforms}{: Linux (RHEL, Debian, Ubuntu), Windows Server (2019, 2022), Proxmox} \\
-     \textbf{Cloud}{: AWS (EC2, S3, IAM, VPC, Lambda)} \\
-    }}
+ \begin{itemize}[leftmargin=0.08in, label={}, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=1pt]
+    \small
+    \item \textbf{Languages}: Python, Go, Bash, SQL
+    \item \textbf{Tools}: Git, Ansible, Terraform, Docker
+    % \item \textbf{Platforms}: Linux (RHEL, Debian, Ubuntu), Windows Server (2019, 2022), Proxmox
+    \item \textbf{Cloud}: AWS (EC2, S3, IAM, VPC, Lambda)
  \end{itemize}
 
 
 % -----------Certifications-----------
 \section{Certifications}
-    \vspace{-15pt} % if using multicols
-    % \vspace{1pt}
-    \begin{multicols}{1}
-        \begin{itemize}[itemsep=-1pt, parsep=3pt, leftmargin=0.22in]
+    \begin{itemize}[leftmargin=0.30in, label=\resumeBullet, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=1pt]
         \small
-            \item AWS Certified Solutions Architect (SAA-C03)
-            \item Red Hat Certified System Administrator (RHCSA)
-            \item HashiCorp Certified Terraform Associate (003)
-            % \item Red Hat Certified Engineer (RHCE)
-            % \item Certified Kubernetes Administrator (CKA)
-        \end{itemize}
-    \end{multicols}
+        \item AWS Certified Solutions Architect (SAA-C03)
+        \item Red Hat Certified System Administrator (RHCSA)
+        % \item Red Hat Certified Engineer (RHCE)
+        % \item Certified Kubernetes Administrator (CKA)
+    \end{itemize}
     % \begin{itemize}[itemsep=-1pt, parsep=3pt, leftmargin=0.22in]
         % \small{
             % \item AWS Certified Solutions Architect (SAA-C03)
@@ -232,12 +225,11 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-        {Boston University}{United States}
-        {Master of Science in Computer Science}{September 2024 -- Present}
-        \vspace{3pt}
+        {Boston University}{September 2024 -- May 2027}
+        {Master of Science in Computer Science}{United States}
     \resumeSubheading
-        {Hong Kong University of Science and Technology}{Hong Kong}
-        {Bachelor of Engineering in Electronic Engineering}{September 2020 -- June 2024}
+        {Hong Kong University of Science and Technology}{September 2020 -- June 2024}
+        {Bachelor of Engineering in Electronic Engineering}{Hong Kong}
   \resumeSubHeadingListEnd
 
 %-------------------------------------------

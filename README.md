@@ -2,6 +2,8 @@
 
 My resumes using LaTex, based on [Jake's resume](https://github.com/jakegut/resume/). Using `pdflatex` to build.
 
+Very stale as of 2026, revisit soon.
+
 ## Versions
 
 - resume-main: base resume
