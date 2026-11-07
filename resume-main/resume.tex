@@ -144,9 +144,10 @@
     {Platform Engineer}{January 2026 -- Present}
     {American Family Insurance}{United States}
     \resumeItemListStart
-      \resumeItem{Developed Ansible and Python automations in Ansible Automation Platform (AAP) to provision multi-node database clusters on VMware vSphere, including SQL Server Always On and Oracle RAC, cutting build time by about 50\%}
-      \resumeItem{Replaced manual cluster setup steps, such as Infoblox IP reservations, Active Directory objects, and shared VMware disks between nodes, with end-to-end automated workflows}
-      \resumeItem{Automated agent updates (e.g. Qualys, Cribl) across hundreds of Windows Server and RHEL servers spanning multiple Active Directory domains}
+      \resumeItem{Automated provisioning of multi-node database clusters (SQL Server Always On, Oracle RAC) on VMware vSphere with Ansible and Python in Ansible Automation Platform (AAP), replacing manual DNS and IP requests, Active Directory setup, and shared disk configuration to cut cluster delivery from several days to the same day}
+      \resumeItem{Converted AAP job, workflow, and input form definitions that were previously hand-edited in the web UI into configuration as code in Git, with drift detection against the live platform and automated syncing of form options from ServiceNow APIs}
+      \resumeItem{Built scheduled end-to-end test builds of the server provisioning pipeline across different domains, operating systems, and networks to catch regressions before users do}
+      \resumeItem{Developed a Python audit tool that reconciles DNS and IP data across two Infoblox grids and vSphere, flagging over 50 unreserved IP addresses at risk of conflicts}
     \resumeItemListEnd
 
   \resumeSubheading
